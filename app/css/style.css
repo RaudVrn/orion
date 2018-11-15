@@ -6,7 +6,7 @@ body {
     flex-direction: column;
 }
 
-header {
+.header {
     background-image: url(../img/Orion.jpg);
     background-repeat: no-repeat;
     height: 689px;
@@ -35,103 +35,124 @@ a {
 
 }
 
-.topbar {
+.header__topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 14px;
 }
 
-/*
-.topbar li,
-.baner-content li,
-.baner-nav li {
-    list-style: none;
+/*.topbar li > a,*/
+/*.baner-content li > a,*/
+/*.baner-nav li > a {*/
+    /*text-decoration: none;*/
+    /*color: #ffffff;*/
+    /*font-size: 14px;*/
+    /*font-weight: 700;*/
+    /*text-align: right;*/
+    /*text-shadow: 0px 2px 1px #656565;*/
+/*}*/
+.header__logo{
+    margin-right: 110px;
 }
-*/
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
 
-.topbar li > a,
-.baner-content li > a,
-.baner-nav li > a {
+.header__menu-link {
+    padding: 0 17px;
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     text-align: right;
     text-shadow: 0px 2px 1px #656565;
+    text-transform: uppercase;
 }
 
-.top-menu {
-    display: inherit;
-    justify-content: space-between;
-}
-
-.top-menu a {
-    padding: 0 20px;
-}
-
-.top-menu a:hover {
+.header__menu-link:hover {
     text-shadow: none;
     border-bottom: 3px solid #fff;
     padding-bottom: 2px;
 }
 
-.top-menu li:last-child > a {
+.singin__btn {
     padding: 12px;
     border-radius: 5px;
     background-color: #3498db;
     text-shadow: none;
     border-bottom: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
-.top-menu li:last-child > a:hover {
-    text-shadow: 0px 2px 1px #656565;
+.singin__btn:hover {
+    text-shadow: 0 2px 1px #656565;
 
 }
 
-.baner-content {
+.slider {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.baner-content img {
+.slider__img {
     margin-top: 122px;
 }
 
-.caption h1 {
+.slider__caption-headline {
     margin-top: 65px;
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 28px;
 }
 
-.caption p {
+.slider__caption-text {
     font-family: "Open Sans";
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+
 }
 
-.baner-btn {
-    display: inherit;
+.slider__baner-btns {
+    display: flex;
     margin-top: 59px;
     padding: 0;
     align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    text-shadow: 0px 2px 1px #656565;
+
 }
 
-.baner-btn a {
+.slider__baner-btn-link1,
+.slider__baner-btn-link2{
     padding: 25px 40px;
     background-color: #59a3fc;
     width: 171px;
     height: 60px;
     text-shadow: none;
-
+    color: #ffffff;
 }
 
-.baner-btn li > p {
+.slider__baner-nobtn p {
     color: #ffffff;
     margin: 0 -14px;
     font-size: 12px;
@@ -146,45 +167,45 @@ a {
 
 }
 
-.baner-btn li:nth-child(2) {
+.slider__baner-nobtn {
     z-index: 2;
     text-shadow: none;
 
 }
 
-.baner-btn li:nth-child(1) > a {
+.slider__baner-btn-link1{
     border-radius: 8px 0 0 8px;
     text-shadow: none;
 
+
 }
 
-.baner-btn li:nth-child(1) > a:hover {
+.slider__baner-btn-link1:hover {
     text-shadow: 0px 2px 1px #656565;
 
 }
 
-.baner-btn li:nth-child(3) > a {
+.slider__baner-btn-link2 {
     border-radius: 0 8px 8px 0;
     background-color: #3d92f9;
     text-shadow: none;
 
 }
 
-.baner-btn li:nth-child(3) > a:hover {
+.slider__baner-btn-link2:hover {
     text-shadow: 0px 2px 1px #656565;
 
 }
 
-.baner-nav {
+.slider__baner-nav {
     display: flex;
     position: absolute;
     bottom: 100px;
-    margin: 0 auto;
+    margin: 0px auto;
     justify-content: center;
-    width: 989px;
 }
 
-.baner-nav a {
+.slider__banner-nav-dot {
     border-radius: 50%;
     background-color: #636363;
     width: 12px;
@@ -192,12 +213,16 @@ a {
     margin: 0 9px
 }
 
-.baner-nav a:hover {
+.slider__banner-nav-dot:hover {
     background-color: #b7b7b7;
 
 }
 
-.baner-nav > .active {
+.slider__banner-nav-dot--active {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 9px;
     background-color: #b7b7b7;
 
 }

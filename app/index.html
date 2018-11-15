@@ -9,42 +9,54 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.min.css">-->
 </head>
 
 <body>
-    <header class="padded">
-        <nav class="topbar">
-            <a class="logo" href="#"><img src="img/logo_top.png" alt="orion logo"></a>
-            <ul class="top-menu">
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HOW</a></li>
-                <li><a href="#">OUR WORK</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">TEAM</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">SIGN IN</a></li>
-            </ul>
-        </nav>
-        <div class="baner-content">
-            <img src="img/Rocket.png" alt="rocket-image">
-            <div class="caption">
-                <h1>LET’S EXPLORE THE SKY!</h1>
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    <header class="header padded">
+        <nav class="header__topbar">
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="img/logo_top.png" alt="orion logo">
+                </a>
             </div>
-            <ul class="baner-btn">
-                <li><a href="#">LEARN MORE</a></li>
-                <li>
-                    <p>OR</p>
+            <ul class="header__menu">
+                <li><a class="header__menu-link" href="#">servises</a></li>
+                <li><a class="header__menu-link" href="#">how</a></li>
+                <li><a class="header__menu-link" href="#">our work</a></li>
+                <li><a class="header__menu-link" href="#">testimonials</a></li>
+                <li><a class="header__menu-link" href="#">team</a></li>
+                <li><a class="header__menu-link" href="#">contact us</a></li>
+                <!--<li><a href="#">SIGN IN</a></li>-->
+            </ul>
+            <div class="header__singin singin">
+                <button class="singin__btn" type="button">sing in</button>
+            </div>
+        </nav>
+        <div class="header__slider slider">
+            <img class="slider__img" src="img/Rocket.png" alt="rocket-image">
+            <div class="slider__caption">
+                <h2 class="slider__caption-headline">let's explore the sky!</h2>
+                <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+            </div>
+            <ul class="slider__baner-btns">
+                <li class="slider__baner-btn">
+                    <a class="slider__baner-btn-link1" href="#">learn more</a>
                 </li>
-                <li><a href="#">CONTACT US</a></li>
+                <li class="slider__baner-nobtn">
+                    <p>or</p>
+                </li>
+                <li class="slider__baner-btn">
+                    <a class="slider__baner-btn-link2" href="#">contact us</a>
+                </li>
 
             </ul>
-        </div>
-        <div class="baner-nav">
-            <a class="active" href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <div class="slider__baner-nav">
+                <a class="slider__banner-nav-dot--active" href="#"></a>
+                <a class="slider__banner-nav-dot" href="#"></a>
+                <a class="slider__banner-nav-dot" href="#"></a>
+            </div>
         </div>
     </header>
     <section class="services padded">
