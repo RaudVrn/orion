@@ -1,0 +1,22 @@
+.nav-arrow{
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-arrow__link {
+    color: #555555;
+    margin: 0 6px
+}
+.nav-arrow__link:last-child{
+    margin-right: 0;
+}
+
+.nav-arrow__link:hover {
+    color: #777777;
+
+}
+
+.nav-arrow__larrow--empty {
+    color: #777777;
+
+}

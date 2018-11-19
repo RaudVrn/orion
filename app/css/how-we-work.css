@@ -1,0 +1,24 @@
+.how-we-work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 534px;
+}
+.how-we-work__link {
+    position: relative;
+    bottom: -20px;
+    margin-top: 65px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 17px;
+    border-radius: 5px;
+    background-color: #ff1e4f;
+    text-decoration: none;
+    z-index: 2;
+
+}
+.how-we-work__link:hover {
+    text-shadow: 0 2px 1px #656565;
+}

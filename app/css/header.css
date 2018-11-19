@@ -1,0 +1,55 @@
+.header {
+    background: url(../img/Orion.jpg) no-repeat;
+    height: 689px;
+    position: relative;
+}
+.header__topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+}
+.header__logo{
+    margin-right: 110px;
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-link {
+    padding: 0 17px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    text-shadow: 0 2px 1px #656565;
+    text-transform: uppercase;
+}
+
+.header__menu-link:hover {
+    text-shadow: none;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 2px;
+}
+
+.singin__btn {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #3498db;
+    text-shadow: none;
+    border-bottom: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.singin__btn:hover {
+    text-shadow: 0 2px 1px #656565;
+}

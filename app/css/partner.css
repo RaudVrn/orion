@@ -1,0 +1,18 @@
+.partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    height: 142px;
+    margin-top: -4px;
+    padding: 0 265px;
+}
+
+.partner__img {
+    opacity: 0.4;
+
+}
+
+.partner__img:hover {
+    opacity: 1;
+}

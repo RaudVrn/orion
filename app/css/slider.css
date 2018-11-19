@@ -1,0 +1,133 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__img {
+    margin-top: 122px;
+}
+
+.slider__caption-headline {
+    margin-top: 65px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.slider__caption-text {
+    font-family: "Open Sans", serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.slider__baner-btns {
+    display: flex;
+    margin-top: 59px;
+    padding: 0;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    text-shadow: 0 2px 1px #656565;
+    margin-bottom: 199px;
+
+}
+
+.slider__baner-btn-link1,
+.slider__baner-btn-link2{
+    padding: 25px 40px;
+    background-color: #59a3fc;
+    width: 171px;
+    height: 60px;
+    text-shadow: none;
+    color: #ffffff;
+}
+
+.slider__baner-nobtn p {
+    color: #ffffff;
+    margin: 0 -14px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0078b2;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-shadow: none;
+
+}
+
+.slider__baner-nobtn {
+    z-index: 2;
+    text-shadow: none;
+
+}
+
+.slider__baner-btn-link1{
+    border-radius: 8px 0 0 8px;
+    text-shadow: none;
+
+
+}
+
+.slider__baner-btn-link1:hover {
+    text-shadow: 0 2px 1px #656565;
+
+}
+
+.slider__baner-btn-link2 {
+    border-radius: 0 8px 8px 0;
+    background-color: #3d92f9;
+    text-shadow: none;
+
+}
+
+.slider__baner-btn-link2:hover {
+    text-shadow: 0 2px 1px #656565;
+
+}
+
+.slider__baner-nav {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__banner-nav-dot {
+    border-radius: 50%;
+    background-color: #636363;
+    width: 12px;
+    height: 12px;
+    margin: 0 9px
+}
+
+.slider__banner-nav-dot:hover {
+    background-color: #b7b7b7;
+
+}
+
+.slider__banner-nav-dot--active {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 9px;
+    background-color: #b7b7b7;
+
+}
