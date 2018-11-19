@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(../img/Orion.jpg) no-repeat;
+    background-size: cover;
+
 }
 
 .slider__img {
@@ -124,10 +127,6 @@
 }
 
 .slider__banner-nav-dot--active {
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    margin: 0 9px;
     background-color: #b7b7b7;
 
 }

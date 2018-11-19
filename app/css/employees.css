@@ -1,8 +1,8 @@
 .employees {
-    width: 989px;
     display: flex;
     justify-content: space-between;
     counter-reset: num;
+    flex-wrap: wrap;
 }
 
 .employees__card {
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 170px;
 }
 .employees__name {
     margin-top: 22px;

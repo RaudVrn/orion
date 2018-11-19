@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion theme</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -33,50 +34,60 @@
 
 <body>
     <header class="header padded">
+        <h1 class="header__headline visually-hidden">Orion theme</h1>
         <nav class="header__topbar">
-            <div class="header__logo logo">
+            <div class="header__left">
+                <div class="header__logo logo">
                 <a class="logo__link" href="#">
                     <img class="logo__img" src="img/logo_top.png" alt="orion logo">
                 </a>
             </div>
-            <ul class="header__menu">
-                <li><a class="header__menu-link" href="#">servises</a></li>
-                <li><a class="header__menu-link" href="#">how</a></li>
-                <li><a class="header__menu-link" href="#">our work</a></li>
-                <li><a class="header__menu-link" href="#">testimonials</a></li>
-                <li><a class="header__menu-link" href="#">team</a></li>
-                <li><a class="header__menu-link" href="#">contact us</a></li>
+            </div>
+            <div class="header__right">
+                <button class="header__menu-burger header__menu-burger--open " type="button">
+                    <span class="header__menu-burger-bar header__menu-burger--top"></span>
+                    <span class="header__menu-burger-bar header__menu-burger--middle"></span>
+                    <span class="header__menu-burger-bar header__menu-burger--bottom"></span>
+                </button>
+                <ul class="header__menu header__menu--hidden">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">servises</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">how</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">our&nbsp;work</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">testimonials</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">team</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">contact&nbsp;us</a></li>
                 <!--<li><a href="#">SIGN IN</a></li>-->
             </ul>
-            <div class="header__singin singin">
-                <button class="singin__btn" type="button">sing in</button>
+                <div class="header__singin header__singin--hidden singin">
+                    <button class="singin__btn" type="button">sing&nbsp;in</button>
+                </div>
             </div>
         </nav>
-        <div class="header__slider slider">
-            <img class="slider__img" src="img/Rocket.png" alt="rocket-image">
-            <div class="slider__caption">
-                <h2 class="slider__caption-headline">let's explore the sky!</h2>
-                <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-            </div>
-            <ul class="slider__baner-btns">
-                <li class="slider__baner-btn">
-                    <a class="slider__baner-btn-link1" href="#">learn more</a>
-                </li>
-                <li class="slider__baner-nobtn">
-                    <p>or</p>
-                </li>
-                <li class="slider__baner-btn">
-                    <a class="slider__baner-btn-link2" href="#">contact us</a>
-                </li>
-
-            </ul>
-            <div class="slider__baner-nav">
-                <a class="slider__banner-nav-dot--active" href="#"></a>
-                <a class="slider__banner-nav-dot" href="#"></a>
-                <a class="slider__banner-nav-dot" href="#"></a>
-            </div>
-        </div>
     </header>
+    <section class="header__slider slider padded">
+        <img class="slider__img" src="img/Rocket.png" alt="rocket-image">
+        <div class="slider__caption">
+            <h2 class="slider__caption-headline">let's explore the sky!</h2>
+            <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        </div>
+        <ul class="slider__baner-btns">
+            <li class="slider__baner-btn">
+                <a class="slider__baner-btn-link1" href="#">learn&nbsp;more</a>
+            </li>
+            <li class="slider__baner-nobtn">
+                <p>or</p>
+            </li>
+            <li class="slider__baner-btn">
+                <a class="slider__baner-btn-link2" href="#">contact&nbsp;us</a>
+            </li>
+
+        </ul>
+        <div class="slider__baner-nav">
+            <a class="slider__banner-nav-dot slider__banner-nav-dot--active" href="#"></a>
+            <a class="slider__banner-nav-dot" href="#"></a>
+            <a class="slider__banner-nav-dot" href="#"></a>
+        </div>
+    </section>
     <section class="services padded">
         <h2 class="services__headline visually-hidden">servises</h2>
         <ul class="services__items">
@@ -84,14 +95,14 @@
                 <a class="services__link" href="#">
                     <i class="services__link-icon far fa-window-restore"></i>
                 </a>
-                <h3 class="services__name">Web Design</h3>
+                <h3 class="services__name">Web&nbsp;Design</h3>
                 <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
             </li>
             <li class="services__item">
                 <a class="services__link" href="#">
                     <i class="services__link-icon fas fa-anchor"></i>
                 </a>
-                <h3 class="services__name">Logo Design</h3>
+                <h3 class="services__name">Logo&nbsp;Design</h3>
                 <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
 
             </li>
@@ -99,7 +110,7 @@
                 <a class="services__link" href="#">
                     <i class="services__link-icon fas fa-print"></i>
                 </a>
-                <h3 class="services__name">Logo Design</h3>
+                <h3 class="services__name">Print&nbsp;Design</h3>
                 <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
 
             </li>
@@ -164,8 +175,8 @@
 
 
     </section>
-    <section class="testmonials padded">
-        <div class="testmonials__section-name section-name">
+    <section class="testimonials padded">
+        <div class="testimonials__section-name section-name">
             <h2 class="section-name__headline">Testimonials</h2>
             <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
         </div>
@@ -229,14 +240,14 @@
     <section class="map">
         <h2 class="visually-hidden">Contacs</h2>
         <div class="map__no-scroll" onClick="style.pointerEvents='none'"></div>
-        <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H" width="1349" height="458"></iframe>
+        <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H" width="100%" height="458"></iframe>
         <div class="map__vcard vcard">
             <div class="vcard__street-address">Blue Avenue #33, King Leonardo 33821</div>
             <div class="vcard__tel"><a class="vcard__tel-link" href="tel:+82394 5940">+82394 5940</a></div>
             <a class="vcard__email-btn" href="#">send us an email</a>
         </div>
     </section>
-    <section class="partner">
+    <section class="partner padded">
         <h2 class="visually-hidden">Partners</h2>
         <img class="partner__img" src="img/nasa_logo.png" alt="nasa logo">
         <img class="partner__img" src="img/444px-Jaxa_logo.png" alt="jaxa logo">

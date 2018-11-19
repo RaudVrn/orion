@@ -1,9 +1,14 @@
-.testmonials{
+.testimonials{
     padding: 0 375px;
 }
-.testmonials__section-name  {
+.testimonials__section-name  {
     margin-top: 64px;
 }
 .testimonials__quote{
     margin-top: 64px;
+}
+@media screen and (max-width: 768px){
+    .testimonials{
+        padding: 0 60px;
+    }
 }

@@ -132,3 +132,29 @@
     background-color: #fff;
     border: 3px solid #dddddd;
 }
+@media screen and (max-width: 768px){
+    .timeline__line{
+        display: block;
+
+    }
+    .timeline__line:before{
+        height: auto;
+    }
+    .timeline__step1{
+        position: relative;
+        top: 0;
+        left: 50px;
+
+    }
+    .timeline__step2{
+        position: relative;
+        top: 0;
+        left: 50px;
+    }
+    .timeline__step1 .timeline__step-headline:before,
+    .timeline__step2 .timeline__step-headline:after {
+        left: -48px;
+    }
+
+
+}

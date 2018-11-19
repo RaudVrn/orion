@@ -1,7 +1,9 @@
 .header {
-    background: url(../img/Orion.jpg) no-repeat;
-    height: 689px;
-    position: relative;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .header__topbar {
     display: flex;
@@ -9,12 +11,49 @@
     align-items: center;
     padding-top: 14px;
 }
-.header__logo{
-    margin-right: 110px;
+
+.header__right{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu-burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 19px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0 0 0;
+    margin-top: 4px;
+    /*display: none;*/
+    /*content: '';*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 30px;*/
+    /*height: 3px;*/
+    /*background-color: #ffffff;*/
+    /*!*box-shadow: 0 10px 0 #ffffff, 0 20px 0 #ffffff;*!*/
+    /*border: 0;*/
+    /*cursor: pointer;*/
+
+}
+/*.header__menu-burger-wrapper:hover{*/
+    /*cursor: pointer;*/
+
+/*}*/
+.header__menu-burger-bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
 }
 .header__menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__menu-link {
@@ -33,7 +72,9 @@
     border-bottom: 3px solid #fff;
     padding-bottom: 2px;
 }
-
+.header__singin{
+    display: flex;
+}
 .singin__btn {
     padding: 12px;
     border-radius: 5px;
@@ -52,4 +93,39 @@
 
 .singin__btn:hover {
     text-shadow: 0 2px 1px #656565;
+}
+@media screen and (max-width: 768px) {
+    .header{
+        position: fixed;
+    }
+    .header__topbar{
+        align-items: flex-start;
+    }
+    .header__right {
+        display: block;
+    }
+    .header__menu-burger{
+        display: flex;
+    }
+    .header__menu-burger:hover{
+
+    }
+    .header__menu{
+        display: block;
+        margin: 0;
+
+    }
+    .header__menu-item{
+        margin: 0 50px 20px 0;
+
+    }
+    .header__menu-link{
+        padding: 0;
+    }
+    .header__menu--hidden,
+    .header__singin--hidden {
+        display: none;
+    }
+
+
 }

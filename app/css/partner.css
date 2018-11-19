@@ -16,3 +16,8 @@
 .partner__img:hover {
     opacity: 1;
 }
+@media screen and (max-width: 768px){
+    .partner{
+        padding: 0 13%;
+    }
+}

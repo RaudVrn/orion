@@ -1,6 +1,6 @@
 body {
-    width: 1349px;
-    margin: 0 auto;
+    /*width: 1349px;*/
+    /*margin: 0 auto;*/
     font-family: Montserrat, serif;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ a {
 }
 
 .padded {
-    padding: 0 180px;
+    padding: 0 13%;
 
 }
 
@@ -35,52 +35,12 @@ a {
     height: 1px;
     margin: -1px;
 }
-/*h4 {*/
-    /*font-family: 'Open Sans';*/
-    /*color: #d7d7d7;*/
-    /*font-size: 14px;*/
-    /*font-weight: 700;*/
-    /*margin: 0;*/
-/*}*/
-
-
-/*.topbar li > a,*/
-/*.baner-content li > a,*/
-/*.baner-nav li > a {*/
-    /*text-decoration: none;*/
-    /*color: #ffffff;*/
-    /*font-size: 14px;*/
-    /*font-weight: 700;*/
-    /*text-align: right;*/
-    /*text-shadow: 0px 2px 1px #656565;*/
-/*}*/
-
-/*.testmonails {*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-/*}*/
-
-
-
-/*.testmonials > p {*/
-    /*margin-top: 41px;*/
-    /*font-family: 'Open Sans';*/
-    /*color: #a1a1a1;*/
-    /*font-size: 14px;*/
-    /*font-weight: 400;*/
-    /*text-align: center;*/
-/*}*/
-
-/*.team h2 {*/
-    /*margin: 0;*/
-/*}*/
-
-/*.team > p {*/
-    /*margin-top: 41px;*/
-    /*font-family: 'Open Sans';*/
-    /*color: #a1a1a1;*/
-    /*font-size: 14px;*/
-    /*font-weight: 400;*/
-    /*line-height: 24px;*/
-/*}*/
+@media screen and (max-width: 768px){
+    body{
+        width: auto;
+        margin: auto;
+    }
+    .padded{
+        padding: 0 60px;
+    }
+}

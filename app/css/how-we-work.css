@@ -22,3 +22,6 @@
 .how-we-work__link:hover {
     text-shadow: 0 2px 1px #656565;
 }
+@media screen and (max-width: 768px){
+
+}
