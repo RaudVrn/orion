@@ -5,7 +5,6 @@
 .section-name__headline {
     color: #464646;
     font-size: 30px;
-    font-weight: 400;
     text-align: center;
     margin: 0;
 
@@ -14,5 +13,10 @@
     font-family: "Open Sans", serif;
     color: #a1a1a1;
     font-size: 14px;
-    font-weight: 400;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .section-name__desc{
+        font-size: 16px;
+    }
 }

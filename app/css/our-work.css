@@ -49,3 +49,8 @@
     background-color: rgba(0, 0, 0, 1);
 
 }
+@media screen and (max-width: 768px){
+    .our-work__item-link{
+        font-size: 17px;
+    }
+}

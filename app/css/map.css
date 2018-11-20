@@ -18,3 +18,16 @@
     top:458px;  /* your iframe height */
     margin-top:-458px;  /* your iframe height */
 }
+
+@media screen and (max-width: 768px){
+    .map__vcard{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        min-height: auto;
+        border-radius: unset;
+
+    }
+
+}

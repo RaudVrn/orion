@@ -20,3 +20,9 @@
     color: #777777;
 
 }
+
+@media screen and (max-width: 768px){
+    .nav-arrow{
+        font-size: 42px
+    }
+}

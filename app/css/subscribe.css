@@ -5,6 +5,7 @@
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
+    text-align: right;
 }
 .subscribe__input {
     background-color: #363636;
@@ -13,15 +14,18 @@
     border: none;
     padding-left: 31px;
     padding-right: 78px;
+    color: #ffffff;
 }
 
 .subscribe__input:focus {
     border-color: white;
+
 }
 
 .subscribe__form {
     position: relative;
     margin-top: 10px;
+    text-align: right;
 }
 
 .subscribe__button {
@@ -41,4 +45,13 @@
 
 .subscribe__button:hover {
     text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+    .subscribe__headline{
+        font-size: 18px;
+    }
+    .subscribe__input{
+        width: auto;
+        padding-right: initial;
+    }
 }

@@ -42,7 +42,6 @@
     font-family: 'Open Sans', serif;
     color: #535353;
     font-size: 14px;
-    font-weight: 400;
     text-align: right;
     margin: 26px 0 0 0;
 }
@@ -52,7 +51,6 @@
     font-family: Lato, serif;
     color: #545454;
     font-size: 14px;
-    font-weight: 400;
     text-align: right;
 
 
@@ -66,5 +64,20 @@
 @media screen and (max-width: 768px){
     .footer{
         display: block;
+    }
+    .footer__menu-headline{
+        font-size: 18px;
+    }
+    .footer__menu-link{
+        font-size: 16px;
+    }
+    .footer__copyright{
+        font-size: 16px;
+    }
+    .footer__good-bye{
+        font-size: 16px;
+    }
+    .footer__good-bye-icon{
+        font-size: 14px;
     }
 }

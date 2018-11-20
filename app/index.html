@@ -44,7 +44,7 @@
             </div>
             </div>
             <div class="header__right">
-                <button class="header__menu-burger header__menu-burger--open " type="button">
+                <button class="header__menu-burger <!--header__menu-burger--opened-->" type="button">
                     <span class="header__menu-burger-bar header__menu-burger--top"></span>
                     <span class="header__menu-burger-bar header__menu-burger--middle"></span>
                     <span class="header__menu-burger-bar header__menu-burger--bottom"></span>
@@ -123,18 +123,19 @@
         </div>
         <div class="how-we-work__timeline timeline">
             <div class="timeline__line">
-                <div class="timeline__circle">
-                </div>
-                <div class="timeline__step1">
-                    <h3 class="timeline__step-headline">Client contact us</h3>
-                    <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
-                </div>
-                <div class="timeline__step2">
-                    <h3 class="timeline__step-headline">We will discuss what do you want</h3>
-                    <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
-                </div>
-                <div class="timeline__circle">
-                </div>
+                <div class="timeline__circle"></div>
+                <ul class="timeline__list">
+                    <li class="timeline__step">
+                        <h3 class="timeline__step-headline">Client contact us</h3>
+                        <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
+                    </li>
+                    <li class="timeline__step timeline__step--left">
+                        <h3 class="timeline__step-headline">We will discuss what do you want</h3>
+                        <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
+                    </li>
+                </ul>
+                <div class="timeline__circle"></div>
+
             </div>
         </div>
         <a class="how-we-work__link" href="#">See all how we work</a>
@@ -249,10 +250,28 @@
     </section>
     <section class="partner padded">
         <h2 class="visually-hidden">Partners</h2>
-        <img class="partner__img" src="img/nasa_logo.png" alt="nasa logo">
-        <img class="partner__img" src="img/444px-Jaxa_logo.png" alt="jaxa logo">
-        <img class="partner__img" src="img/Boeing_logo_blue.png" alt="boeing logo">
-        <img class="partner__img" src="img/CNN-logo.png" alt="cnn logo">
+        <ul class="partner__list">
+            <li class="partner__item">
+                <a class="partner__link" href="#">
+                    <img class="partner__img" src="img/nasa_logo.png" alt="NASA logo">
+                </a>
+            </li>
+            <li class="partner__item">
+                <a class="partner__link" href="#">
+                    <img class="partner__img" src="img/444px-Jaxa_logo.png" alt="Jaxa logo">
+                </a>
+            </li>
+            <li class="partner__item">
+                <a class="partner__link" href="#">
+                    <img class="partner__img" src="img/Boeing_logo_blue.png" alt="Boeing logo">
+                </a>
+            </li>
+            <li class="partner__item">
+                <a class="partner__link" href="#">
+                    <img class="partner__img" src="img/CNN-logo.png" alt="CNN logo">
+                </a>
+            </li>
+        </ul>
     </section>
     <footer class="footer padded">
         <nav class="footer__menus">

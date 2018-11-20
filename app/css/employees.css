@@ -9,8 +9,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 170px;
+    text-align: center;
 }
 .employees__name {
     margin-top: 22px;
@@ -26,13 +28,16 @@
     color: #b7b7b7;
     font-size: 12px;
     font-weight: 400;
-    text-align: right;
+    text-align: center;
+
 }
 
 .employees__social-icons {
     display: flex;
     justify-content: space-between;
-    width: 111px;
+}
+.employees__social-link{
+    padding: 0 21px;
 }
 
 .employees__social-link i {
@@ -60,6 +65,31 @@
     height: 35px;
     line-height: 35px;
 }
+
 .employees__social-link:hover{
     text-shadow: 0 0 0 #000;
+}
+@media screen and (max-width: 1024px){
+    .employees{
+        justify-content: space-around;
+    }
+    .employees__card{
+        width: 34%;
+        margin-bottom: 50px;
+    }
+    .employees__card:before{
+        top: 42px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .employees__name{
+        font-size: 21px;
+    }
+    .employees__prof{
+        font-size: 14px;
+    }
+    .employees__social-link i{
+        font-size: 40px;
+        padding: 0 10px;
+    }
 }

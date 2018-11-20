@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 534px;
 }
 .how-we-work__link {
     position: relative;
@@ -23,5 +22,7 @@
     text-shadow: 0 2px 1px #656565;
 }
 @media screen and (max-width: 768px){
-
+    .how-we-work__link{
+        font-size: 16px;
+    }
 }

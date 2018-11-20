@@ -1,6 +1,6 @@
 .header {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     right: 0;
@@ -11,13 +11,20 @@
     align-items: center;
     padding-top: 14px;
 }
+.header__left{
+    margin-right: 10px;
+}
+.logo__link{
+    display: block;
+    height: 25px;
+}
 
 .header__right{
     position: relative;
     display: flex;
     justify-content: space-between;
 }
-.header__menu-burger{
+.header__menu-burger {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -28,22 +35,20 @@
     border: 0;
     padding: 0 0 0;
     margin-top: 4px;
-    /*display: none;*/
-    /*content: '';*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*width: 30px;*/
-    /*height: 3px;*/
-    /*background-color: #ffffff;*/
-    /*!*box-shadow: 0 10px 0 #ffffff, 0 20px 0 #ffffff;*!*/
-    /*border: 0;*/
-    /*cursor: pointer;*/
-
 }
-/*.header__menu-burger-wrapper:hover{*/
-    /*cursor: pointer;*/
+.header__menu-burger--opened .header__menu-burger--top{
+    position: absolute;
+    transform: rotate(45deg);
+}
+.header__menu-burger--opened .header__menu-burger--bottom {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.header__menu-burger--opened .header__menu-burger--middle{
+    display: none;
+}
 
-/*}*/
+
 .header__menu-burger-bar{
     display: block;
     width: 25px;
@@ -55,9 +60,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.header__menu-item{
+    padding: 0 1vw;
+}
 
 .header__menu-link {
-    padding: 0 17px;
+    /*padding: 0 17px;*/
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
@@ -71,9 +79,11 @@
     text-shadow: none;
     border-bottom: 3px solid #fff;
     padding-bottom: 2px;
+
 }
 .header__singin{
     display: flex;
+    margin-left: 10px;
 }
 .singin__btn {
     padding: 12px;
@@ -94,9 +104,12 @@
 .singin__btn:hover {
     text-shadow: 0 2px 1px #656565;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
     .header{
         position: fixed;
+        height: 56px;
+        background: url(../img/Orion.jpg) no-repeat;
+        background-size: cover;
     }
     .header__topbar{
         align-items: flex-start;
@@ -106,26 +119,78 @@
     }
     .header__menu-burger{
         display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
-    .header__menu-burger:hover{
-
+    .header__menu-burger:hover .header__menu-burger-bar{
+        height: 4px;
     }
     .header__menu{
         display: block;
         margin: 0;
+        position: relative;
+        right: 30px;
+        top: 41px;
 
     }
     .header__menu-item{
-        margin: 0 50px 20px 0;
+        padding: 26px 50px;
+        background-color: #000000;
 
     }
     .header__menu-link{
         padding: 0;
     }
+    .header__singin{
+        position: relative;
+        right: 30px;
+        top: 41px;
+        padding: 26px 50px;
+        background-color: #000000;
+        margin: 0;
+
+    }
+    .singin__btn{
+        padding: 20px;
+    }
     .header__menu--hidden,
     .header__singin--hidden {
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+    /*.header{*/
+        /*position: fixed;*/
+    /*}*/
+    /*.header__topbar{*/
+        /*align-items: flex-start;*/
+    /*}*/
+    /*.header__right {*/
+        /*display: block;*/
+    /*}*/
+    /*.header__menu-burger{*/
+        /*display: flex;*/
+    /*}*/
+    /*.header__menu-burger:hover{*/
+
+    /*}*/
+    /*.header__menu{*/
+        /*display: block;*/
+        /*margin: 0;*/
+
+    /*}*/
+    /*.header__menu-item{*/
+        /*margin: 0 50px 20px 0;*/
+
+    /*}*/
+    /*.header__menu-link{*/
+        /*padding: 0;*/
+    /*}*/
+    /*.header__menu--hidden,*/
+    /*.header__singin--hidden {*/
+        /*display: none;*/
+    /*}*/
 
 
 }
