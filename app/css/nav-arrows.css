@@ -26,3 +26,8 @@
         font-size: 42px
     }
 }
+@media screen and (max-width: 320px){
+    .nav-arrow{
+        justify-content: space-around;
+    }
+}

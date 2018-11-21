@@ -23,8 +23,36 @@
 .partner__img:hover {
     opacity: 1;
 }
+.partner__link{
+    display: block;
+}
 @media screen and (max-width: 768px){
     .partner{
         padding: 0 13%;
+    }
+    .partner__list{
+        flex-wrap: wrap;
+        margin-bottom: 0 ;
+        justify-content: space-around;
+
+    }
+    .partner__item{
+        /*width: 100%;*/
+        margin: 0 10px 33px;
+
+    }
+}
+@media screen and (max-width: 320px){
+    .partner{
+        display: block;
+    }
+    .partner__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 33px 0 18px;
+    }
+    .partner__item{
+        margin-bottom: 15px;
     }
 }

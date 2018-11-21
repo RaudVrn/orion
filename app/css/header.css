@@ -191,6 +191,27 @@
     /*.header__singin--hidden {*/
         /*display: none;*/
     /*}*/
-
-
+}
+@media screen and (max-width: 768px){
+    .header{
+        background: #000000 none;
+        padding: 0 15px;
+    }
+    .header__topbar{
+        display: block;
+    }
+    .header__menu-burger{
+        top: -25px;
+    }
+    .header__menu-burger--opened{
+        top: -17px;
+    }
+    .header__singin{
+        top: 0;
+        left: 0;
+    }
+    .singin__btn{
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -12,7 +12,7 @@
 }
 
 .services__item {
-    display: inherit;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 259px;
@@ -58,5 +58,21 @@
 @media screen and (max-width: 768px){
         .services__desc{
             font-size: 16px;
+            margin-bottom: 29px;
         }
+        .services__items{
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+}
+@media screen and (max-width: 320px){
+    .services__items{
+        display: block;
+    }
+    .services__item{
+        width: auto;
+    }
+    .services__desc{
+        padding: 0 15px;
+    }
 }

@@ -45,6 +45,11 @@ a {
         margin: auto;
     }
     .padded{
-        padding: 0 60px;
+        padding: 0 7%;
+    }
+}
+@media screen and (max-width: 320px){
+    .padded{
+        padding: 0 0;
     }
 }

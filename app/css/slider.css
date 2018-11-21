@@ -133,3 +133,19 @@
         font-size: 18px;
     }
 }
+@media screen and (max-width: 385px) {
+    .slider__baner-btn-link1,
+    .slider__baner-btn-link2{
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 50vw;
+        line-height: 60px;
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .slider__caption-text{
+        padding: 0 15px;
+    }
+}

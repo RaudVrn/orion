@@ -52,5 +52,39 @@
 @media screen and (max-width: 768px){
     .our-work__item-link{
         font-size: 17px;
+
     }
+    .our-work__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-work__items{
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+    .our-work__item{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 350px){
+    .our-work__item-img{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 320px){
+    .our-work__wrapper{
+        margin-bottom: 12px;
+    }
+    .our-work__items{
+        display: block;
+        width: auto;
+        height: auto;
+
+    }
+    .our-work__item{
+        margin-bottom: 9px;
+    }
+
 }
