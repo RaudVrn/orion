@@ -9,7 +9,7 @@
 
 }
 
-.vcard__street-address {
+.vcard__adr {
     padding: 32px 23px 0;
     color: #545454;
     font-size: 18px;
@@ -59,7 +59,7 @@
 
 }
 @media screen and (max-width: 768px){
-    .vcard__street-address{
+    .vcard__adr{
         font-size: 20px;
     }
     .vcard__tel{

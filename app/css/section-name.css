@@ -1,5 +1,6 @@
 .section-name{
     margin: 56px auto 0;
+    max-width: 100%;
 
 }
 .section-name__headline {
@@ -16,8 +17,11 @@
     text-align: center;
 }
 @media screen and (max-width: 768px){
+    .section-name__headline{
+        font-size: 26px;
+    }
     .section-name__desc{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 320px){

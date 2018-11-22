@@ -1,4 +1,27 @@
-.timeline {
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline__link {
+    position: relative;
+    bottom: -20px;
+    margin-top: 65px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 17px;
+    border-radius: 5px;
+    background-color: #ff1e4f;
+    text-decoration: none;
+    z-index: 2;
+
+}
+.timeline__link:hover {
+    text-shadow: 0 2px 1px #656565;
+}
+.timeline__content {
     position: relative;
     margin-top: 23px;
 }
@@ -85,7 +108,7 @@
 
 @media screen and (max-width: 1024px){
 
-    .timeline{
+    .timeline__content{
         width: 100%;
     }
 
@@ -122,14 +145,21 @@
         width: 13px;
         height: 13px;
     }
+
 }
+
+@media screen and (max-width: 768px){
     .timeline__step-headline{
-        font-size: 16px;
+        font-size: 12px;
     }
     .timeline__step-decs{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .timeline__link{
+        font-size: 12px;
     }
 }
+
 @media screen and (max-width: 320px){
     .timeline__step{
         padding-right: 16px;

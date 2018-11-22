@@ -10,11 +10,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 14px;
+    max-width: 988px;
+    margin: 0 auto;
 }
 .header__left{
     margin-right: 10px;
 }
-.logo__link{
+.header__logo-link{
     display: block;
     height: 25px;
 }
@@ -23,6 +25,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+.header__menu{
+    display: flex;
 }
 .header__menu-burger {
     display: none;
@@ -36,17 +41,6 @@
     padding: 0 0 0;
     margin-top: 4px;
 }
-.header__menu-burger--opened .header__menu-burger--top{
-    position: absolute;
-    transform: rotate(45deg);
-}
-.header__menu-burger--opened .header__menu-burger--bottom {
-    position: absolute;
-    transform: rotate(-45deg);
-}
-.header__menu-burger--opened .header__menu-burger--middle{
-    display: none;
-}
 
 
 .header__menu-burger-bar{
@@ -55,7 +49,7 @@
     height: 3px;
     background-color: #ffffff;
 }
-.header__menu {
+.header__menu-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +79,7 @@
     display: flex;
     margin-left: 10px;
 }
-.singin__btn {
+.header__singin-btn {
     padding: 12px;
     border-radius: 5px;
     background-color: #3498db;
@@ -101,10 +95,16 @@
     text-transform: uppercase;
 }
 
-.singin__btn:hover {
+.header__singin-btn:hover {
     text-shadow: 0 2px 1px #656565;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
+
+}
+
+
+
+@media screen and (max-width: 875px){
     .header{
         position: fixed;
         height: 56px;
@@ -123,14 +123,36 @@
         top: 0;
         right: 0;
     }
+    .header__menu--opened{
+        display: block;
+    }
+    .header__menu--opened .header__menu-burger-bar--top{
+        position: absolute;
+        transform: rotate(45deg);
+        top: 7px;
+        right: 0;
+    }
+    .header__menu--opened .header__menu-burger-bar--bottom {
+        position: absolute;
+        transform: rotate(-45deg);
+        top: 7px;
+        right: 0;
+    }
+    .header__menu--opened .header__menu-burger-bar--middle{
+        display: none;
+    }
     .header__menu-burger:hover .header__menu-burger-bar{
         height: 4px;
     }
-    .header__menu{
+    .header__menu-list{
+        display: none;
+    }
+    .header__menu--opened .header__menu-list{
         display: block;
         margin: 0;
         position: relative;
-        right: 30px;
+        right: 0;
+        left: 0;
         top: 41px;
 
     }
@@ -143,54 +165,22 @@
         padding: 0;
     }
     .header__singin{
+        display: none;
+    }
+    .header__menu--opened .header__singin{
+        display: block;
         position: relative;
-        right: 30px;
-        top: 41px;
+        right: 0;
+        left: 0;
+        top: 17px;
         padding: 26px 50px;
         background-color: #000000;
         margin: 0;
 
     }
-    .singin__btn{
+    .header__singin-btn{
         padding: 20px;
     }
-    .header__menu--hidden,
-    .header__singin--hidden {
-        display: none;
-    }
-}
-@media screen and (max-width: 768px) {
-    /*.header{*/
-        /*position: fixed;*/
-    /*}*/
-    /*.header__topbar{*/
-        /*align-items: flex-start;*/
-    /*}*/
-    /*.header__right {*/
-        /*display: block;*/
-    /*}*/
-    /*.header__menu-burger{*/
-        /*display: flex;*/
-    /*}*/
-    /*.header__menu-burger:hover{*/
-
-    /*}*/
-    /*.header__menu{*/
-        /*display: block;*/
-        /*margin: 0;*/
-
-    /*}*/
-    /*.header__menu-item{*/
-        /*margin: 0 50px 20px 0;*/
-
-    /*}*/
-    /*.header__menu-link{*/
-        /*padding: 0;*/
-    /*}*/
-    /*.header__menu--hidden,*/
-    /*.header__singin--hidden {*/
-        /*display: none;*/
-    /*}*/
 }
 @media screen and (max-width: 768px){
     .header{
@@ -203,15 +193,20 @@
     .header__menu-burger{
         top: -25px;
     }
-    .header__menu-burger--opened{
-        top: -17px;
-    }
     .header__singin{
         top: 0;
         left: 0;
     }
-    .singin__btn{
+    .header__singin-btn{
         width: 100%;
         text-align: center;
+    }
+    .header__menu--opened .header__menu-list{
+        top: 17px;
+    }
+}
+@media screen and (max-width: 320px){
+    .header__menu--opened .header__menu-list{
+        top: 17px;
     }
 }

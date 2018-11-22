@@ -14,12 +14,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/employees.css">
-    <link rel="stylesheet" href="css/how-we-work.css">
-    <link rel="stylesheet" href="css/nav-arrows.css">
-    <link rel="stylesheet" href="css/our-work.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/partner.css">
-    <link rel="stylesheet" href="css/quote.css">
     <link rel="stylesheet" href="css/section-name.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/subscribe.css">
@@ -29,292 +25,332 @@
     <link rel="stylesheet" href="css/type-icons.css">
     <link rel="stylesheet" href="css/vcard.css">
     <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/padded.css">
     <!--<link rel="stylesheet" href="css/style.min.css">-->
 </head>
 
 <body>
+  <main class="main">
     <header class="header padded">
-        <h1 class="header__headline visually-hidden">Orion theme</h1>
-        <nav class="header__topbar">
-            <div class="header__left">
-                <div class="header__logo logo">
-                <a class="logo__link" href="#">
-                    <img class="logo__img" src="img/logo_top.png" alt="orion logo">
-                </a>
-            </div>
-            </div>
-            <div class="header__right">
-                <button class="header__menu-burger <!--header__menu-burger--opened-->" type="button">
-                    <span class="header__menu-burger-bar header__menu-burger--top"></span>
-                    <span class="header__menu-burger-bar header__menu-burger--middle"></span>
-                    <span class="header__menu-burger-bar header__menu-burger--bottom"></span>
-                </button>
-                <ul class="header__menu header__menu--hidden">
-                <li class="header__menu-item"><a class="header__menu-link" href="#">servises</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">how</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">our&nbsp;work</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">testimonials</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">team</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#">contact&nbsp;us</a></li>
-                <!--<li><a href="#">SIGN IN</a></li>-->
-            </ul>
-                <div class="header__singin header__singin--hidden singin">
-                    <button class="singin__btn" type="button">sing&nbsp;in</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="header__slider slider padded">
-        <img class="slider__img" src="img/Rocket.png" alt="rocket-image">
-        <div class="slider__caption">
-            <h2 class="slider__caption-headline">let's explore the sky!</h2>
-            <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    <h1 class="header__headline visually-hidden">Orion theme</h1>
+    <nav class="header__topbar">
+      <div class="header__left">
+        <a class="header__logo-link" href="#">
+          <img class="header__logo-img" src="img/logo_top.png" alt="Orion logo">
+        </a>
+      </div>
+      <div class="header__right">
+        <div class="header__menu <!--header__menu--opened-->">
+          <button class="header__menu-burger" type="button">
+            <span class="header__menu-burger-bar header__menu-burger-bar--top"></span>
+            <span class="header__menu-burger-bar header__menu-burger-bar--middle"></span>
+            <span class="header__menu-burger-bar header__menu-burger-bar--bottom"></span>
+          </button>
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Servises</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">How</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Our&nbsp;work</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Testimonials</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Team</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Contact&nbsp;us</a></li>
+          </ul>
+          <div class="header__singin">
+            <button class="header__singin-btn" type="button">Sing&nbsp;in</button>
+          </div>
         </div>
-        <ul class="slider__baner-btns">
-            <li class="slider__baner-btn">
-                <a class="slider__baner-btn-link1" href="#">learn&nbsp;more</a>
-            </li>
-            <li class="slider__baner-nobtn">
-                <p>or</p>
-            </li>
-            <li class="slider__baner-btn">
-                <a class="slider__baner-btn-link2" href="#">contact&nbsp;us</a>
-            </li>
+      </div>
+    </nav>
+  </header>
+    <section class="slider padded">
+    <img class="slider__img" src="img/Rocket.png" alt="rocket-image">
+    <div class="slider__caption">
+      <h2 class="slider__caption-headline">Let's explore the sky!</h2>
+      <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    </div>
+    <ul class="slider__banner-btns">
+      <li class="slider__banner-btn slider__banner-btn--l">
+        <a class="slider__banner-btn-link" href="#">Learn&nbsp;more</a>
+      </li>
+      <li class="slider__banner-nobtn">
+        <span>or</span>
+      </li>
+      <li class="slider__banner-btn slider__banner-btn--r">
+        <a class="slider__banner-btn-link" href="#">Contact&nbsp;us</a>
+      </li>
 
-        </ul>
-        <div class="slider__baner-nav">
-            <a class="slider__banner-nav-dot slider__banner-nav-dot--active" href="#"></a>
-            <a class="slider__banner-nav-dot" href="#"></a>
-            <a class="slider__banner-nav-dot" href="#"></a>
-        </div>
-    </section>
+    </ul>
+    <div class="slider__banner-nav">
+      <a class="slider__banner-nav-dot slider__banner-nav-dot--active" href="#"></a>
+      <a class="slider__banner-nav-dot" href="#"></a>
+      <a class="slider__banner-nav-dot" href="#"></a>
+    </div>
+  </section>
     <section class="services padded">
-        <h2 class="services__headline visually-hidden">servises</h2>
-        <ul class="services__items">
-            <li class="services__item">
-                <a class="services__link" href="#">
-                    <i class="services__link-icon far fa-window-restore"></i>
-                </a>
-                <h3 class="services__name">Web&nbsp;Design</h3>
-                <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+    <h2 class="services__headline visually-hidden">Servises</h2>
+    <ul class="services__list">
+      <li class="services__item">
+        <a class="services__link" href="#">
+          <i class="services__link-icon far fa-window-restore"></i>
+        </a>
+        <h3 class="services__name">Web&nbsp;Design</h3>
+        <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+      </li>
+      <li class="services__item">
+        <a class="services__link" href="#">
+          <i class="services__link-icon fas fa-anchor"></i>
+        </a>
+        <h3 class="services__name">Logo&nbsp;Design</h3>
+        <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+
+      </li>
+      <li class="services__item">
+        <a class="services__link" href="#">
+          <i class="services__link-icon fas fa-print"></i>
+        </a>
+        <h3 class="services__name">Print&nbsp;Design</h3>
+        <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+
+      </li>
+    </ul>
+  </section>
+    <section class="timeline padded">
+      <div class="timeline__section-name section-name">
+        <h2 class="section-name__headline">How we work</h2>
+        <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+      </div>
+      <div class="timeline__content">
+        <div class="timeline__line">
+          <div class="timeline__circle"></div>
+          <ul class="timeline__list">
+            <li class="timeline__step">
+              <h3 class="timeline__step-headline">Client contact us</h3>
+              <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
             </li>
-            <li class="services__item">
-                <a class="services__link" href="#">
-                    <i class="services__link-icon fas fa-anchor"></i>
-                </a>
-                <h3 class="services__name">Logo&nbsp;Design</h3>
-                <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
-
+            <li class="timeline__step timeline__step--left">
+              <h3 class="timeline__step-headline">We will discuss what do you want</h3>
+              <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
             </li>
-            <li class="services__item">
-                <a class="services__link" href="#">
-                    <i class="services__link-icon fas fa-print"></i>
-                </a>
-                <h3 class="services__name">Print&nbsp;Design</h3>
-                <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+          </ul>
+          <div class="timeline__circle"></div>
 
-            </li>
-        </ul>
+        </div>
+      </div>
+      <a class="timeline__link" href="#">See all how we work</a>
     </section>
-    <section class="how-we-work padded">
-        <div class="how-we-work__section-name section-name">
-            <h2 class="section-name__headline">How we work</h2>
-            <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
-        <div class="how-we-work__timeline timeline">
-            <div class="timeline__line">
-                <div class="timeline__circle"></div>
-                <ul class="timeline__list">
-                    <li class="timeline__step">
-                        <h3 class="timeline__step-headline">Client contact us</h3>
-                        <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
-                    </li>
-                    <li class="timeline__step timeline__step--left">
-                        <h3 class="timeline__step-headline">We will discuss what do you want</h3>
-                        <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
-                    </li>
-                </ul>
-                <div class="timeline__circle"></div>
-
-            </div>
-        </div>
-        <a class="how-we-work__link" href="#">See all how we work</a>
-    </section>
-    <section class="our-work padded">
-        <div class="our-work__section-name section-name">
-            <h2 class="section-name__headline">Our work</h2>
-            <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
-        <div class="our-work__wrapper">
-        <ul class="our-work__items">
-                <li class="our-work__item">
-                    <img class="our-work__item-img" src="img/Syllabus%20-%20Inspire.jpg" alt="syllabys photo">
-                    <a class="our-work__item-link" href="#">Sylabus</a>
-                </li>
-                <li class="our-work__item">
-                    <img class="our-work__item-img" src="img/contest.jpg" alt="contest photo">
-                    <a class="our-work__item-link" href="#">Contest</a>
-                </li>
-                <li class="our-work__item">
-                    <img class="our-work__item-img" src="img/Wayfaring.jpg" alt="wayfaring photo">
-                    <a class="our-work__item-link" href="#">Travel</a>
-                </li>
-                <li class="our-work__item">
-                    <img class="our-work__item-img" src="img/all-category-hover.jpg" alt="shop photo">
-                    <a class="our-work__item-link" href="#">Shop</a>
-                </li>
-            </ul>
-        <div class="our-work__nav nav-arrow">
-                <a class="nav-arrow__link" href="#">
-                    <i class="nav-arrow__larrow--empty fas fa-arrow-alt-circle-left disable"></i>
-                </a>
-                <a class="nav-arrow__link" href="#">
-                    <i class="nav-arrow__rarrow fas fa-arrow-alt-circle-right"></i>
-                </a>
-            </div>
-        </div>
-
-
-    </section>
+    <section class="portfolio padded">
+    <div class="portfolio__section-name section-name">
+      <h2 class="section-name__headline">Our work</h2>
+      <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    </div>
+    <div class="portfolio__wrapper">
+      <ul class="portfolio__list">
+        <li class="portfolio__item">
+          <img class="portfolio__item-img" src="img/Syllabus%20-%20Inspire.jpg" alt="syllabys photo">
+          <a class="portfolio__item-link" href="#">Sylabus</a>
+        </li>
+        <li class="portfolio__item">
+          <img class="portfolio__item-img" src="img/contest.jpg" alt="contest photo">
+          <a class="portfolio__item-link" href="#">Contest</a>
+        </li>
+        <li class="portfolio__item">
+          <img class="portfolio__item-img" src="img/Wayfaring.jpg" alt="wayfaring photo">
+          <a class="portfolio__item-link" href="#">Travel</a>
+        </li>
+        <li class="portfolio__item">
+          <img class="portfolio__item-img" src="img/all-category-hover.jpg" alt="shop photo">
+          <a class="portfolio__item-link" href="#">Shop</a>
+        </li>
+      </ul>
+      <div class="portfolio__nav-arrows">
+        <a class="portfolio__nav-link" href="#">
+          <i class="portfolio__nav-larrow portfolio__nav-larrow--empty fas fa-arrow-alt-circle-left disable"></i>
+        </a>
+        <a class="portfolio__nav-link" href="#">
+          <i class="portfolio__nav-rarrow fas fa-arrow-alt-circle-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
     <section class="testimonials padded">
-        <div class="testimonials__section-name section-name">
-            <h2 class="section-name__headline">Testimonials</h2>
-            <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
-        <div class="testimonials__quote quote">
-            <img class="quote__author-img" src="img/American-Hero-Neil-Armstrong---102034.jpg" alt="Neil Armstrong photo">
-            <div class="quote__content">
-                <div class="quote__author">
-                    <h3 class="quote__author-name">Neil Armstrong&nbsp;/&nbsp;</h3>
-                    <p class="quote__author-prof">1st man walk on the moon</p>
-                </div>
-                <q  class="quote__text">Orion is great, you should try it. The component is very easy to understand, the value is great too. And last but not least, orion is my favorite services.</q>
-            </div>
-        </div>
-    </section>
+    <div class="testimonials__section-name section-name">
+      <h2 class="section-name__headline">Testimonials</h2>
+      <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    </div>
+    <div class="testimonials__quote">
+      <img class="testimonials__author-img" src="img/American-Hero-Neil-Armstrong---102034.jpg" alt="Neil Armstrong photo">
+      <div class="testimonials__quote-wrapper">
+        <aside class="testimonials__quote-author">
+          <span class="testimonials__author-name">Neil Armstrong&nbsp;/&nbsp;</span>
+          <span class="testimonials__author-prof">1st man walk on the moon</span>
+        </aside>
+        <blockquote class="testimonials__quote-text">Orion is great, you should try it. The component is very easy to understand, the value is great too. And last but not least, orion is my favorite services.</blockquote>
+      </div>
+    </div>
+  </section>
     <section class="team padded">
-        <div class="team__section-name section-name">
-            <h2 class="section-name__headline">Meet the team</h2>
-            <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-        </div>
-        <ul class="team__items employees">
-            <li class="employees__card">
-                <img class="employees__img" src="img/13.png" alt="Chief Executive Officer photo">
-                <h3 class="employees__name">Afnizar Nur Ghifari</h3>
-                <p class="employees__prof">Chief Executive Officer</p>
-                <div class="employees__social-icons">
-                    <a class="employees__social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </li>
-            <li class="employees__card">
-                <img class="employees__img" src="img/128%20(2).png" alt="Black Belt UI/UX Strategist photo">
-                <h3 class="employees__name">Henry Phillips</h3>
-                <p class="employees__prof">Black Belt UI/UX Strategist</p>
-                <div class="employees__social-icons">
-                    <a class="employees__social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </li>
-            <li class="employees__card">
-                <img class="employees__img" src="img/128%20(1).png" alt="Lead User Experience Manager">
-                <h3 class="employees__name">Gerald Elliott</h3>
-                <p class="employees__prof">Lead User Experience Manager</p>
-                <div class="employees__social-icons">
-                    <a class="employees__social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-dribbble"></i></a></div>
-            </li>
-            <li class="employees__card">
-                <img class="employees__img" src="img/128.png" alt="Lead User Experience Manager photo">
-                <h3 class="employees__name">Read Alexander</h3>
-                <p class="employees__prof">Lead User Experience Manager</p>
-                <div class="employees__social-icons">
-                    <a class="employees__social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="employees__social-link" href="#"><i class="fab fa-dribbble"></i></a></div>
-            </li>
+    <div class="team__section-name section-name">
+      <h2 class="section-name__headline">Meet the team</h2>
+      <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+    </div>
+    <ul class="team__list">
+      <li class="team__item">
+        <img class="team__item-img" src="img/13.png" alt="Chief Executive Officer photo">
+        <aside class="team__item-name">Afnizar Nur Ghifari</aside>
+        <span class="team__item-prof">Chief Executive Officer</span>
+        <ul class="team__item-social-icon-list">
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-facebook-f"></i></a></li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-twitter"></i></a></li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-dribbble"></i></a></li>
         </ul>
-    </section>
+      </li>
+      <li class="team__item">
+        <img class="team__item-img" src="img/128%20(2).png" alt="Black Belt UI/UX Strategist photo">
+        <aside class="team__item-name">Henry Phillips</aside>
+        <span class="team__item-prof">Black Belt UI/UX Strategist</span>
+        <ul class="team__item-social-icon-list">
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+        <i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-twitter"></i></a></li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </li>
+      <li class="team__item">
+        <img class="team__item-img" src="img/128%20(1).png" alt="Lead User Experience Manager">
+        <aside class="team__item-name">Gerald Elliott</aside>
+        <span class="team__item-prof">Lead User Experience Manager</span>
+        <ul class="team__item-social-icon-list">
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-twitter"></i></a></li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </li>
+      <li class="team__item">
+        <img class="team__item-img" src="img/128.png" alt="Lead User Experience Manager photo">
+        <aside class="team__item-name">Read Alexander</aside>
+        <span class="team__item-prof">Lead User Experience Manager</span>
+        <ul class="team__item-social-icon-list">
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="team__item-social-icon">
+            <a class="team__item-social-link" href="#">
+              <i class="fab fa-dribbble"></i></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
     <section class="map">
-        <h2 class="visually-hidden">Contacs</h2>
-        <div class="map__no-scroll" onClick="style.pointerEvents='none'"></div>
-        <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H" width="100%" height="458"></iframe>
-        <div class="map__vcard vcard">
-            <div class="vcard__street-address">Blue Avenue #33, King Leonardo 33821</div>
-            <div class="vcard__tel"><a class="vcard__tel-link" href="tel:+82394 5940">+82394 5940</a></div>
-            <a class="vcard__email-btn" href="#">send us an email</a>
+      <h2 class="visually-hidden">Contacs</h2>
+      <div class="map__no-scroll" onClick="style.pointerEvents='none'"></div>
+      <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H" width="100%" height="458"></iframe>
+      <div class="map__vcard vcard">
+        <p class="vcard__fn fn visually-hidden">Orion</p>
+        <p class="vcard__org org visually-hidden">Orion</p>
+        <div class="vcard__adr adr">
+          <span class="vcard__street-adress street-address">Blue Avenue #33, King Leonardo 33821</span>
+          <span class="vcard__locality locality visually-hidden">Purwokerto</span>
         </div>
-    </section>
+        <div class="vcard__tel tel"><a class="vcard__tel-link" href="tel:+82394 5940">+82394 5940</a></div>
+        <a class="vcard__email-btn" href="#">Send us an email</a>
+      </div>
+  </section>
     <section class="partner padded">
-        <h2 class="visually-hidden">Partners</h2>
-        <ul class="partner__list">
-            <li class="partner__item">
-                <a class="partner__link" href="#">
-                    <img class="partner__img" src="img/nasa_logo.png" alt="NASA logo">
-                </a>
-            </li>
-            <li class="partner__item">
-                <a class="partner__link" href="#">
-                    <img class="partner__img" src="img/444px-Jaxa_logo.png" alt="Jaxa logo">
-                </a>
-            </li>
-            <li class="partner__item">
-                <a class="partner__link" href="#">
-                    <img class="partner__img" src="img/Boeing_logo_blue.png" alt="Boeing logo">
-                </a>
-            </li>
-            <li class="partner__item">
-                <a class="partner__link" href="#">
-                    <img class="partner__img" src="img/CNN-logo.png" alt="CNN logo">
-                </a>
-            </li>
-        </ul>
-    </section>
+      <h2 class="visually-hidden">Partners</h2>
+      <ul class="partner__list">
+        <li class="partner__item">
+          <a class="partner__link" href="#">
+            <img class="partner__img" src="img/nasa_logo.png" alt="NASA logo">
+          </a>
+        </li>
+        <li class="partner__item">
+          <a class="partner__link" href="#">
+            <img class="partner__img" src="img/444px-Jaxa_logo.png" alt="Jaxa logo">
+          </a>
+        </li>
+        <li class="partner__item">
+          <a class="partner__link" href="#">
+            <img class="partner__img" src="img/Boeing_logo_blue.png" alt="Boeing logo">
+          </a>
+        </li>
+        <li class="partner__item">
+          <a class="partner__link" href="#">
+            <img class="partner__img" src="img/CNN-logo.png" alt="CNN logo">
+          </a>
+        </li>
+      </ul>
+  </section>
     <footer class="footer padded">
-        <nav class="footer__menus">
-            <div class="footer__menu-column">
-                <h4 class="footer__menu-headline">value</h4>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">About</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Blog</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Service</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="#">Customer</a></li>
-                </ul>
-            </div>
-            <div class="footer__menu-column">
-                <h4 class="footer__menu-headline">affiliate</h4>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">NASA</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">JAXA Japan</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">Boeing</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">ABC Networks</a></li>
-                </ul>
-            </div>
-            <div class="footer__menu-column">
-                <h4 class="footer__menu-headline">social</h4>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">Facebook</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">Dribbble</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-link" href="">Twitter</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="footer__subscribe subscribe">
-            <h4 class="subscribe__headline">get served</h4>
-            <form class="subscribe__form" action="#" method="post">
-                <input class="subscribe__input" type="email" placeholder="user@email.com" required>
-                <button class="subscribe__button" type="submit">OK</button>
-
-            </form>
-            <p class="footer__copyright">Orion Theme &copy; Afnizar Nur Ghifari</p>
-            <p class="footer__good-bye">Made with love<i class="footer__good-bye-icon fas fa-heart"></i></p>
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="footer__wrapper">
+      <nav class="footer__menus">
+        <div class="footer__menu-column">
+          <h4 class="footer__menu-headline">Value</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">About</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Blog</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Service</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Customer</a></li>
+          </ul>
         </div>
+        <div class="footer__menu-column">
+          <h4 class="footer__menu-headline">Affiliate</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">NASA</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">JAXA Japan</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">Boeing</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">ABC Networks</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu-column">
+          <h4 class="footer__menu-headline">Social</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">Facebook</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">Dribbble</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="">Twitter</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__subscribe">
+        <h4 class="footer__subscribe-headline">Get served</h4>
+        <form class="footer__subscribe-form" action="#" method="post">
+          <input class="footer__subscribe-input" type="email" placeholder="user@email.com" required>
+          <button class="footer__subscribe-button" type="submit">OK</button>
 
-    </footer>
+        </form>
+        <p class="footer__copyright">Orion Theme &copy; Afnizar Nur Ghifari</p>
+        <p class="footer__good-bye">Made with love<i class="footer__good-bye-icon fas fa-heart"></i></p>
+      </div>
+    </div>
+
+  </footer>
+  </main>
 </body>
 
 </html>

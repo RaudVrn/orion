@@ -1,4 +1,4 @@
-body {
+.main {
     /*width: 1349px;*/
     /*margin: 0 auto;*/
     font-family: Montserrat, serif;
@@ -27,29 +27,30 @@ a {
     text-decoration: none;
 }
 
-.padded {
-    padding: 0 13%;
-
-}
-
 .visually-hidden{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    top: 0;
+    left: 0;
 }
 @media screen and (max-width: 768px){
-    body{
+    h2{
+        font-size: 18px;
+    }
+    .main{
         width: auto;
         margin: auto;
+        font-size: 14px;
     }
     .padded{
-        padding: 0 7%;
+         padding: 0 30px;
     }
 }
 @media screen and (max-width: 320px){
     .padded{
-        padding: 0 0;
+        padding: 0 20px;
     }
 }

@@ -1,19 +1,23 @@
 
-.our-work {
+.portfolio {
     background-color: #e7eef6;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+.portfolio__wrapper{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.our-work__wrapper{
-    margin-bottom: 62px;
+    justify-content: space-between;
+    max-width: 718px;
+    margin: 0 auto 62px;
 }
 
-.our-work__section-name{
+.portfolio__section-name{
     margin-top: 79px;
 }
 
-.our-work__items {
+.portfolio__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,12 +27,13 @@
     padding: 0;
 }
 
-.our-work__item {
+.portfolio__item {
     position: relative;
+    /*width: 100%;*/
 
 }
 
-.our-work__item-link {
+.portfolio__item-link {
     z-index: 2;
     position: absolute;
     bottom: 30px;
@@ -45,46 +50,73 @@
     text-decoration: none;
 }
 
-.our-work__item-link:hover {
+.portfolio__item-link:hover {
     background-color: rgba(0, 0, 0, 1);
 
 }
+.portfolio__nav-arrows{
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+.portfolio__nav-link {
+    color: #555555;
+    margin: 0 6px
+}
+.portfolio__nav-link:last-child{
+    margin-right: 0;
+}
+
+.portfolio__nav-link:hover {
+    color: #777777;
+
+}
+
+.portfolio__nav-larrow--empty {
+    color: #777777;
+
+}
 @media screen and (max-width: 768px){
-    .our-work__item-link{
-        font-size: 17px;
+    .portfolio__item-link{
+        font-size: 13px;
 
     }
-    .our-work__wrapper{
+    .portfolio__wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .our-work__items{
+    .portfolio__list{
+        display: block;
         width: auto;
         height: auto;
         justify-content: center;
     }
-    .our-work__item{
+    .portfolio__item{
         margin-bottom: 10px;
     }
+
 }
 @media screen and (max-width: 350px){
-    .our-work__item-img{
+    .portfolio__item-img{
         width: 100vw;
     }
 }
 @media screen and (max-width: 320px){
-    .our-work__wrapper{
+    .portfolio__wrapper{
         margin-bottom: 12px;
     }
-    .our-work__items{
+    .portfolio__list{
         display: block;
         width: auto;
         height: auto;
 
     }
-    .our-work__item{
+    .portfolio__item{
         margin-bottom: 9px;
+    }
+    .portfolio__nav-arrows{
+        justify-content: space-around;
     }
 
 }

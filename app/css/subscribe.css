@@ -1,4 +1,4 @@
-.subscribe__headline{
+.footer__subscribe-headline{
     font-family: 'Open Sans', serif;
     color: #d7d7d7;
     font-size: 14px;
@@ -7,7 +7,7 @@
     text-transform: uppercase;
     text-align: right;
 }
-.subscribe__input {
+.footer__subscribe-input {
     background-color: #363636;
     width: 270px;
     height: 40px;
@@ -17,18 +17,18 @@
     color: #ffffff;
 }
 
-.subscribe__input:focus {
+.footer__subscribe-input:focus {
     border-color: white;
 
 }
 
-.subscribe__form {
+.footer__subscribe-form {
     position: relative;
     margin-top: 10px;
     text-align: right;
 }
 
-.subscribe__button {
+.footer__subscribe-button {
     font-family: Lato, serif;
     color: #b7b7b7;
     font-size: 14px;
@@ -43,14 +43,14 @@
     top: 0;
 }
 
-.subscribe__button:hover {
+.footer__subscribe-button:hover {
     text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
-    .subscribe__headline{
+    .footer__subscribe-headline{
         font-size: 18px;
     }
-    .subscribe__input{
+    .footer__subscribe-input{
         width: auto;
         padding-right: initial;
     }

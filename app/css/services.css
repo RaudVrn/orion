@@ -4,11 +4,12 @@
     background-color: #e7eef6;
 }
 
-.services__items {
-    margin-top: 29px;
+.services__list {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    max-width: 988px;
+    margin: 29px auto;
 }
 
 .services__item {
@@ -56,17 +57,20 @@
     display: inline-table;
 }
 @media screen and (max-width: 768px){
+        .services__name{
+            font-size: 18px;
+        }
         .services__desc{
-            font-size: 16px;
+            font-size: 12px;
             margin-bottom: 29px;
         }
-        .services__items{
+        .services__list{
             justify-content: space-around;
             flex-wrap: wrap;
         }
 }
 @media screen and (max-width: 320px){
-    .services__items{
+    .services__list{
         display: block;
     }
     .services__item{
