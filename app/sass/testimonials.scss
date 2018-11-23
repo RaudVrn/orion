@@ -1,0 +1,120 @@
+.testimonials__quote {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials__author-img {
+    height: 81px;
+}
+
+.testimonials__quote-author {
+    display: flex;
+    margin-bottom: 21px;
+
+}
+
+.testimonials__author-name {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0
+}
+
+.testimonials__author-prof {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    line-height: 24px;
+}
+
+
+.testimonials__quote-wrapper {
+    border: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-left: 40px;
+    position: relative;
+    border-radius: 5px;
+    max-width: 480px;
+    width: 100%;
+}
+
+.testimonials__quote-wrapper:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 15px solid;
+    border-bottom: 15px solid transparent;
+    right: 100%;
+    top: 30%;
+    color: #e0e0e0;
+}
+
+.testimonials__quote-text {
+    margin: 20px 0 0;
+    font-family: 'Open Sans', serif;
+    color: #959595;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.testimonials__section-name  {
+    margin-top: 64px;
+}
+.testimonials__quote{
+    margin-top: 64px;
+}
+@media screen and (max-width: 768px){
+    .testimonials__author-name{
+        font-size: 16px;
+    }
+    .testimonials__author-prof{
+        font-size: 10px;
+    }
+    .testimonials__quote-text{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 570px){
+    .testimonials__quote-wrapper{
+        margin-left: 0;
+    }
+    .testimonials__quote{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials__author-img{
+        margin-bottom: 30px;
+    }
+    .testimonials__quote-wrapper:before{
+        border-bottom: 15px solid;
+        right: 48%;
+        top: -15px;
+        border-right: 15px solid transparent;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .testimonials__quote{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__quote-author{
+        display: block;
+    }
+    .testimonials__quote-wrapper{
+        margin-left: 0;
+    }
+    .testimonials__quote-wrapper:before{
+        border-bottom: 15px solid;
+        right: 48%;
+        top: -15px;
+        border-right: 15px solid transparent;
+    }
+}
