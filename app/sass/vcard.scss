@@ -1,80 +1,87 @@
 .vcard {
+  width: 31%;
+  min-height: 147px;
 
-    background-color: #ffffff;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    width: 31%;
-    min-height: 147px;
-    border-radius: 5px;
-
-
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
 }
 
 .vcard__adr {
-    padding: 32px 23px 0;
-    color: #545454;
-    font-size: 18px;
-    text-align: left;
+  padding: 32px 23px 0;
+
+  color: #545454;
+  font-size: 18px;
+  text-align: left;
 }
 
 .vcard__tel-link {
-    color: #acacac;
-    font-size: 14px;
-    text-align: left;
-    text-decoration: none;
-    padding-left: 23px;
+  padding-left: 23px;
 
+  color: #acacac;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .vcard__tel-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .vcard__tel {
-    margin-top: 15px;
-    margin-bottom: 72px;
-
+  margin-top: 15px;
+  margin-bottom: 72px;
 }
 
 .vcard__email-btn {
-    display: inline-block;
-    background-color: #3498db;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 42px;
-    font-family: Montserrat, serif;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 42px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+
+  font-family: Montserrat, serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #3498db;
 }
 
 .vcard__email-btn:hover {
-    text-shadow: 0 2px 1px #656565;
-
+  text-shadow: 0 2px 1px #656565;
 }
+
 @media screen and (max-width: 768px){
+
   .vcard{
     width: auto;
   }
-    .vcard__adr{
-        font-size: 20px;
-    }
-    .vcard__tel{
-        margin-bottom: 28px;
-    }
-    .vcard__tel-link{
-        font-size: 24px;
-    }
-    .vcard__email-btn{
-        position: relative;
-        top: 0;
-        left: 0;
-        font-size: 16px;
-    }
+
+  .vcard__adr{
+    font-size: 20px;
+  }
+
+  .vcard__tel{
+    margin-bottom: 28px;
+  }
+
+  .vcard__tel-link{
+    font-size: 24px;
+  }
+
+  .vcard__email-btn{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    font-size: 16px;
+  }
 }

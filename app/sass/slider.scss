@@ -1,194 +1,222 @@
 .slider {
-    /*position: relative;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../img/Orion.jpg) no-repeat;
-    background-size: cover;
+  /*position: relative;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: calc(-50vw + 50%);
+  width: 100vw;
+
+  background: url(../img/Orion.jpg) no-repeat;
+  background-size: cover;
 
 }
 
 .slider__img {
-    margin-top: 180px;
+  margin-top: 180px;
   width: 60px;
   height: 60px;
+
   fill: #ffffff;
 }
+
 .slider__caption{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .slider__caption-headline {
-    margin-top: 65px;
-    color: #ffffff;
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 28px;
+  margin-top: 65px;
+  margin-bottom: 28px;
+
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .slider__caption-text {
-    font-family: "Open Sans", serif;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 59px;
+  margin-bottom: 59px;
 
+  font-family: "Open Sans", serif;
+  color: #ffffff;
+  text-align: center;
 }
 
 .slider__banner-btns {
-    display: flex;
-    padding: 0;
-    align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: right;
-    text-shadow: 0 2px 1px #656565;
-    margin-bottom: 69px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 69px;
 
-
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  text-shadow: 0 2px 1px #656565;
 }
 
 .slider__banner-btn{
-    padding: 25px 40px;
-    background-color: #59a3fc;
-    text-shadow: none;
+  padding: 25px 40px;
+
+  text-shadow: none;
+
+  background-color: #59a3fc;
 }
 
 .slider__banner-btn--l{
-    border-radius: 8px 0 0 8px;
-
+  border-radius: 8px 0 0 8px;
 }
+
 .slider__banner-btn--r{
-    border-radius: 0 8px 8px 0;
-
+  border-radius: 0 8px 8px 0;
 }
-.slider__banner-nobtn span {
-    display: block;
-    color: #ffffff;
-    margin: 0 -14px;
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #0078b2;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    text-shadow: none;
 
+.slider__banner-nobtn span {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 0 -14px;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+
+  border-radius: 50%;
+  background-color: #0078b2;
+
+  line-height: 28px;
+  text-shadow: none;
 }
 
 .slider__banner-nobtn {
-    z-index: 2;
-    text-shadow: none;
+  z-index: 2;
 
+  text-shadow: none;
 }
 
 .slider__banner-btn-link{
-    text-shadow: none;
-    color: #ffffff;
-
-
+  text-shadow: none;
+  color: #ffffff;
 }
 
 .slider__banner-btn-link:hover {
-    text-shadow: 0 2px 1px #656565;
-
+  text-shadow: 0 2px 1px #656565;
 }
 
-
 .slider__banner-nav {
-    display: flex;
-    /*position: absolute;*/
-    /*bottom: 100px;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*margin: 0 auto;*/
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+  /*position: absolute;*/
+  /*bottom: 100px;*/
+  /*left: 0;*/
+  /*right: 0;*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .slider__banner-nav-dot {
-    border-radius: 50%;
-    background-color: #636363;
-    width: 12px;
-    height: 12px;
-    margin: 0 9px
+  width: 12px;
+  height: 12px;
+  margin: 0 9px;
+
+  border-radius: 50%;
+  background-color: #636363;
 }
 
 .slider__banner-nav-dot:hover {
-    background-color: #b7b7b7;
-
+  background-color: #b7b7b7;
 }
 
 .slider__banner-nav-dot--active {
-    background-color: #b7b7b7;
-
+  background-color: #b7b7b7;
 }
+
 @media screen and #{$retina}{
+
   .slider{
     background-image: url(../img/Orionx2.jpg);
   }
 }
+
 @media screen and (max-width: 875px) {
+
   .slider{
     margin-top: 56px;
   }
 }
+
 @media screen and (max-width: 768px) {
-    .slider{
-        margin-top: 56px;
-    }
-    .slider__caption-headline{
-        font-size: 40px;
-    }
-    .slider__caption-text{
-        font-size: 14px;
-    }
+
+  .slider{
+    margin-top: 56px;
+  }
+
+  .slider__caption-headline{
+    font-size: 40px;
+  }
+
+  .slider__caption-text{
+    font-size: 14px;
+  }
 }
+
 @media screen and (max-width: 385px) {
-    .slider__img{
-        margin-top: 90px;
-        width: 30px;
-      height: 30px;
-    }
-    .slider__caption-headline{
-        margin-top: 30px;
-        font-size: 35px ;
-    }
-    /*.slider__caption-text{*/
-        /*margin-bottom: 30px ;*/
-    /*}*/
-    .slider__banner-btns{
-        margin-bottom: 35px;
-    }
-    .slider__banner-btn {
-        padding: 12px 20px;
-        /*display: block;*/
-        /*text-align: center;*/
-        /*padding: 0;*/
-        /*width: 50vw;*/
-        /*line-height: 60px;*/
-        /*border-radius: 0;*/
-    }
-    .slider__banner-nav{
-        margin-bottom: 50px;
-    }
+
+  .slider__img{
+    margin-top: 90px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider__caption-headline{
+    margin-top: 30px;
+
+    font-size: 35px ;
+  }
+
+  /*.slider__caption-text{*/
+  /*margin-bottom: 30px ;*/
+  /*}*/
+
+  .slider__banner-btns{
+    margin-bottom: 35px;
+  }
+
+  .slider__banner-btn {
+    padding: 12px 20px;
+    /*display: block;*/
+    /*padding: 0;*/
+    /*width: 50vw;*/
+
+    /*text-align: center;*/
+    /*line-height: 60px;*/
+
+    /*border-radius: 0;*/
+  }
+
+  .slider__banner-nav{
+    margin-bottom: 50px;
+  }
 }
+
 @media screen and (max-width: 320px) {
-    .slider__caption-text{
-        padding: 0 15px;
-        font-size: 13px;
-    }
+
+  .slider__caption-text{
+    padding: 0 15px;
+
+    font-size: 13px;
+  }
+
   .slider{
     background-image: url(../img/Orion320.jpg);
   }
+
   @media screen and #{$retina}{
+
     .slider{
       background-image: url(../img/Orion320x2.jpg);
     }

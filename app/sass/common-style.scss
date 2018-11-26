@@ -1,54 +1,67 @@
 $retina:(min-resolution: 144dpi), (min-resolution: 1.5dppx);
+$desktop:(max-width: 1440px);
+$desktop1024:(max-width: 1024px);
+$tablet:(max-width: 768px);
+$mobile:(max-width: 320px);
 
 
 
 
+.main,
+.header,
+.footer{
+  display: flex;
+  flex-direction: column;
 
-.main {
-    /*width: 1349px;*/
-    /*margin: 0 auto;*/
-    font-family: Montserrat, serif;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
 
 }
 
 h2 {
-    color: #464646;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
+  color: #464646;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
 }
 
 ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .visually-hidden{
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+
+
 }
 @media screen and (max-width: 768px){
-    h2{
-        font-size: 18px;
-    }
-    .main{
-        width: auto;
-        margin: auto;
-        font-size: 14px;
-    }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .main{
+    width: auto;
+    margin: auto;
+
+    font-size: 14px;
+  }
 }
