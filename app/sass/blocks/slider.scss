@@ -58,7 +58,7 @@
   text-shadow: 0 2px 1px #656565;
 }
 
-.slider__banner-btn{
+.slider__banner-btn {
   padding: 25px 40px;
 
   text-shadow: none;
@@ -66,11 +66,11 @@
   background-color: #59a3fc;
 }
 
-.slider__banner-btn--l{
+.slider__banner-btn--l {
   border-radius: 8px 0 0 8px;
 }
 
-.slider__banner-btn--r{
+.slider__banner-btn--r {
   border-radius: 0 8px 8px 0;
 }
 
@@ -98,7 +98,7 @@
   text-shadow: none;
 }
 
-.slider__banner-btn-link{
+.slider__banner-btn-link {
   text-shadow: none;
   color: #ffffff;
 }
@@ -136,27 +136,23 @@
   background-color: #b7b7b7;
 }
 
-@media screen and #{$retina}{
+@media #{$retina} {
 
   .slider{
     background-image: url(../../img/Orionx2.jpg);
   }
 }
 
-@media screen and (max-width: 875px) {
+@media (max-width: 875px) {
 
   .slider{
-    margin-top: 56px;
+    margin-top: 55px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media #{$tablet} {
 
-  .slider{
-    margin-top: 56px;
-  }
-
-  .slider__caption-headline{
+  .slider__caption-headline {
     font-size: 40px;
   }
 
@@ -165,7 +161,7 @@
   }
 }
 
-@media screen and (max-width: 385px) {
+@media (max-width: 385px) {
 
   .slider__img{
     margin-top: 90px;
@@ -173,7 +169,7 @@
     height: 30px;
   }
 
-  .slider__caption-headline{
+  .slider__caption-headline {
     margin-top: 30px;
 
     font-size: 35px ;
@@ -183,7 +179,7 @@
   /*margin-bottom: 30px ;*/
   /*}*/
 
-  .slider__banner-btns{
+  .slider__banner-btns {
     margin-bottom: 35px;
   }
 
@@ -204,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media #{$mobile} {
 
   .slider__caption-text{
     padding: 0 15px;
@@ -216,7 +212,7 @@
     background-image: url(../../img/Orion320.jpg);
   }
 
-  @media screen and #{$retina}{
+  @media #{$retina}{
 
     .slider{
       background-image: url(../../img/Orion320x2.jpg);

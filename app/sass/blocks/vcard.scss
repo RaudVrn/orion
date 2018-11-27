@@ -58,7 +58,7 @@
   text-shadow: 0 2px 1px #656565;
 }
 
-@media screen and (max-width: 768px){
+@media #{$tablet}{
 
   .vcard{
     width: auto;
@@ -82,5 +82,7 @@
     left: 0;
 
     font-size: 16px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
