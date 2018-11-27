@@ -1,0 +1,62 @@
+body{
+  overflow-x: hidden;
+  //min-width: 320px;
+}
+.main,
+.header,
+.footer{
+  display: flex;
+  flex-direction: column;
+
+  font-family: #{$font-main};
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  color: #464646;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+
+  h2{
+    font-size: 18px;
+  }
+
+  .main{
+    width: auto;
+    margin: auto;
+
+    font-size: 14px;
+  }
+}
+
+.padded {
+  margin: 0 auto;
+  //padding: 0 13%;
+  max-width: 988px;
+  @media #{$desktop1024} {
+    padding: 0 40px;
+  }
+  @media #{$tablet} {
+    padding: 0 30px;
+  }
+  @media #{$mobile} {
+    padding: 0 20px;
+  }
+}

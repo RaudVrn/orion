@@ -1,19 +1,20 @@
 @import "normalize.scss";
-@import "common-style.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "map.scss";
-@import "partner.scss";
-@import "portfolio.scss";
-@import "section-name.scss";
-@import "services.scss";
-@import "slider.scss";
-@import "subscribe.scss";
-@import "team.scss";
-@import "testimonials.scss";
-@import "timeline.scss";
-@import "type-icons.scss";
-@import "vcard.scss";
-@import "padded";
+@import "fonts.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/map.scss";
+@import "blocks/partner.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/section-name.scss";
+@import "blocks/services.scss";
+@import "blocks/slider.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/team.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/timeline.scss";
+@import "blocks/vcard.scss";
 
 
