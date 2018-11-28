@@ -15,7 +15,6 @@
 
 .testimonials__author-name {
   margin: 0;
-
   font-size: 18px;
   font-weight: 400;
   text-align: left;
@@ -23,7 +22,6 @@
 
 .testimonials__author-prof {
   margin: 0;
-
   font-size: 12px;
   font-weight: 400;
   text-align: left;
@@ -32,13 +30,11 @@
 
 .testimonials__quote-wrapper {
   position: relative;
-
   box-sizing: border-box;
   padding: 25px;
   margin-left: 40px;
   max-width: 480px;
   width: 100%;
-
   border-radius: 5px;
   border: 2px solid #e0e0e0;
 }
@@ -48,19 +44,15 @@
   content: "";
   right: 100%;
   top: 30%;
-
   width: 0;
   height: 0;
-
   color: #e0e0e0;
-
   border-right: 15px solid;
   border-bottom: 15px solid transparent;
 }
 
 .testimonials__quote-text {
   margin: 20px 0 0;
-
   font-family: #{$font-open-sans};
   color: #959595;
   font-size: 15px;
@@ -69,72 +61,69 @@
   text-align: left;
 }
 
-.testimonials__section-name{
+.testimonials__section-name {
   margin-top: 64px;
 }
 
-.testimonials__quote{
+.testimonials__quote {
   margin-top: 64px;
 }
 
-@media screen and (max-width: 768px){
+@media #{$tablet} {
 
-  .testimonials__author-name{
+  .testimonials__author-name {
     font-size: 16px;
   }
 
-  .testimonials__author-prof{
+  .testimonials__author-prof {
     font-size: 10px;
   }
 
-  .testimonials__quote-text{
+  .testimonials__quote-text {
     font-size: 13px;
   }
 }
 
-@media screen and (max-width: 570px){
-
-  .testimonials__quote-wrapper{
+@media (max-width: 570px) {
+  .testimonials__quote-wrapper {
     margin-left: 0;
   }
 
-  .testimonials__quote{
+  .testimonials__quote {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonials__author-img{
+  .testimonials__author-img {
     margin-bottom: 30px;
   }
 
-  .testimonials__quote-wrapper:before{
+  .testimonials__quote-wrapper:before {
     right: 48%;
     top: -15px;
-
     border-bottom: 15px solid;
     border-right: 15px solid transparent;
   }
 }
 
-@media screen and (max-width: 320px){
+@media #{$mobile} {
 
-  .testimonials__quote{
+  .testimonials__quote {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonials__quote-author{
+  .testimonials__quote-author {
     display: block;
   }
 
-  .testimonials__quote-wrapper{
+  .testimonials__quote-wrapper {
     margin-left: 0;
   }
 
-  .testimonials__quote-wrapper:before{
+  .testimonials__quote-wrapper:before {
     right: 48%;
     top: -15px;
-
     border-right: 15px solid transparent;
     border-bottom: 15px solid;
   }

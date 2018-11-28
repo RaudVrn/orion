@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orion</title>
   <meta name="description" content="Orion theme">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="img/favicon/orion32.ico">
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="img/favicon/orion16.ico">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,10 +18,15 @@
     <nav class="header__topbar">
       <div class="header__left">
         <a class="header__logo-link" href="#">
-          <!--<svg xmlns="http://www.w3.org/2000/svg">-->
+          <!--<svg class="header__logo-img header__logo-img&#45;&#45;min" xmlns="http://www.w3.org/2000/svg">-->
           <!--<use xlink:href="img/sprite.svg#logo-o"></use>-->
           <!--</svg>-->
-          <img width="148" height="26" class="header__logo-img"  src="img/logo_top.png" srcset="img/logo_top@2x.png 2x" alt="Orion logo">
+          <picture>
+            <source type="image/webp" media="(max-width: 875px)" srcset="img/logo-o.webp 1x, img/logo-o@2x.webp 2x">
+            <source media="(max-width: 875px)" srcset="img/logo-o.png 1x, img/logo-o@2x.png 2x">
+            <source type="image/webp" srcset="img/logo_top.webp 1x, img/logo_top@2x.webp 2x">
+            <img width="148" height="26" class="header__logo-img"  src="img/logo_top.png" srcset="img/logo_top@2x.png 2x" alt="Orion logo">
+          </picture>
         </a>
       </div>
       <div class="header__right">
@@ -139,37 +145,41 @@
       <ul class="portfolio__list">
         <li class="portfolio__item">
           <picture>
+            <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
             <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
           </picture>
           <a class="portfolio__item-link" href="#">Sylabus</a>
         </li>
         <li class="portfolio__item">
           <picture>
+            <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
             <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
           </picture>
           <a class="portfolio__item-link" href="#">Contest</a>
         </li>
         <li class="portfolio__item">
           <picture>
+            <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
             <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
           </picture>
           <a class="portfolio__item-link" href="#">Travel</a>
         </li>
         <li class="portfolio__item">
           <picture>
+            <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
             <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
           </picture>
           <a class="portfolio__item-link" href="#">Shop</a>
         </li>
       </ul>
-      <div class="portfolio__nav-arrows">
+      <div class="portfolio__nav-arrow-list">
         <a class="portfolio__nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-larrow portfolio__nav-larrow--empty">
+          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow portfolio__nav-arrow--empty">
             <use xlink:href="img/sprite.svg#arrow-left"></use>
           </svg>
         </a>
         <a class="portfolio__nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-rarrow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow">
             <use xlink:href="img/sprite.svg#arrow-right"></use>
           </svg>
         </a>
@@ -183,6 +193,7 @@
     </div>
     <div class="testimonials__quote">
       <picture>
+        <source type="image/webp" srcset="img/American-Hero-Neil-Armstrong---102034.webp 1x, img/American-Hero-Neil-Armstrong---102034@2x.webp 2x">
         <img width="81" height="81" class="testimonials__author-img" src="img/American-Hero-Neil-Armstrong---102034.jpg" srcset="img/American-Hero-Neil-Armstrong---102034@2x.jpg 2x" alt="Neil Armstrong photo">
       </picture>
       <div class="testimonials__quote-wrapper">
@@ -202,6 +213,7 @@
     <ul class="team__list">
       <li class="team__item">
         <picture>
+          <source type="image/webp" srcset="img/AfnizarNurGhifari.webp 1x, img/AfnizarNurGhifari@2x.webp 2x">
           <img width="123" height="124" class="team__item-img" src="img/AfnizarNurGhifari.png" srcset="img/AfnizarNurGhifari@2x.png 2x" alt="Chief Executive Officer photo">
         </picture>
         <span class="team__item-name">Afnizar Nur Ghifari</span>
@@ -228,6 +240,7 @@
       </li>
       <li class="team__item">
         <picture>
+          <source type="image/webp" srcset="img/HenryPhillips.webp 1x, img/HenryPhillips@2x.webp 2x">
           <img width="123" height="124" class="team__item-img" src="img/HenryPhillips.png" srcset="img/HenryPhillips@2x.png 2x" alt="Black Belt UI/UX Strategist photo">
         </picture>
         <span class="team__item-name">Henry Phillips</span>
@@ -254,6 +267,7 @@
       </li>
       <li class="team__item">
         <picture>
+          <source type="image/webp" srcset="img/GeraldElliott.webp 1x, img/GeraldElliott@2x.webp 2x">
           <img width="123" height="124" class="team__item-img" src="img/GeraldElliott.png" srcset="img/GeraldElliott@2x.png 2x" alt="Lead User Experience Manager">
         </picture>
         <span class="team__item-name">Gerald Elliott</span>
@@ -280,6 +294,7 @@
       </li>
       <li class="team__item">
         <picture>
+          <source type="image/webp" srcset="img/ReadAlexander.webp 1x, img/ReadAlexander@2x.webp 2x">
           <img width="123" height="124" class="team__item-img" src="img/ReadAlexander.png" srcset="img/ReadAlexander@2x.png 2x" alt="Lead User Experience Manager photo">
         </picture>
         <span class="team__item-name">Read Alexander</span>
@@ -327,6 +342,7 @@
         <li class="partner__item">
           <a class="partner__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/nasa_logo.webp 1x, img/nasa_logo@2x.webp 2x">
               <img width="85" height="71" class="partner__img" src="img/nasa_logo.png" srcset="img/nasa_logo@2x.png 2x" alt="NASA logo">
             </picture>
           </a>
@@ -334,13 +350,15 @@
         <li class="partner__item">
           <a class="partner__link" href="#">
             <picture>
-              <img width="101" height="61" class="partner__img" src="img/444px-Jaxa_logo.png" srcset="img/444px-Jaxa_logo@2x.png 2x" alt="Jaxa logo">
+              <source type="image/webp" srcset="img/jaxa_logo.webp 1x, img/jaxa_logo@2x.webp 2x">
+              <img width="101" height="61" class="partner__img" src="img/jaxa_logo.png" srcset="img/jaxa_logo@2x.png 2x" alt="Jaxa logo">
             </picture>
           </a>
         </li>
         <li class="partner__item">
           <a class="partner__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/Boeing_logo_blue.webp 1x, img/Boeing_logo_blue@2x.webp 2x">
               <img width="199" height="45" class="partner__img" src="img/Boeing_logo_blue.png" srcset="img/Boeing_logo_blue@2x.png 2x" alt="Boeing logo">
             </picture>
           </a>
@@ -348,6 +366,7 @@
         <li class="partner__item">
           <a class="partner__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/CNN-logo.webp 1x, img/CNN-logo@2x.webp 2x">
               <img width="75" height="37" class="partner__img" src="img/CNN-logo.png" srcset="img/CNN-logo@2x.png 2x" alt="CNN logo">
             </picture>
           </a>
@@ -395,7 +414,7 @@
 
         </form>
         <p class="footer__copyright">Orion Theme &copy; Afnizar Nur Ghifari</p>
-        <div class="footer__copyright-wrapper"><p class="footer__good-bye">Made with love</p>
+        <div class="footer__good-bye-wrapper"><p class="footer__good-bye">Made with love</p>
           <svg width="12" height="12" class="footer__good-bye-icon" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#heart"></use>
           </svg>
