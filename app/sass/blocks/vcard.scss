@@ -1,16 +1,29 @@
 .vcard {
   width: 31%;
   min-height: 147px;
+  background-color: $white;
   border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+  @media #{$tablet} {
+    width: auto;
+  }
 }
+
+// .vcard__wrapper {
+//   position: relative;
+// }
 
 .vcard__adr {
   padding: 32px 23px 0;
-  color: #545454;
   font-size: 18px;
   text-align: left;
+  color: #545454;
+
+  @media #{$tablet} {
+    margin-bottom: 28px;
+  }
+
   @media #{$mobile} {
     font-size: 16px;
   }
@@ -18,22 +31,27 @@
 
 .vcard__tel-link {
   padding-left: 23px;
-  color: #acacac;
   font-size: 14px;
   text-align: left;
+  color: #acacac;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
   @media #{$mobile} {
     font-size: 12px;
   }
 }
 
-.vcard__tel-link:hover {
-  text-decoration: underline;
-}
 
 .vcard__tel {
-  margin-top: 15px;
   margin-bottom: 72px;
+
+  @media #{$tablet} {
+    margin-bottom: 25px;
+  }
 }
 
 .vcard__email-btn {
@@ -42,37 +60,27 @@
   display: inline-block;
   width: 100%;
   height: 42px;
-  color: $white;
-  font-size: 14px;
   font-weight: 700;
-  text-align: center;
+  font-size: 14px;
   line-height: 42px;
-  text-decoration: none;
+  text-align: center;
+  color: $white;
   text-transform: uppercase;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  text-decoration: none;
   background-color: $blue;
-}
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 
-.vcard__email-btn:hover {
-  text-shadow: 0 2px 1px #656565;
-}
-
-@media #{$tablet} {
-  .vcard{
-    width: auto;
+  &:hover {
+    text-shadow: 0 2px 1px #656565;
   }
 
-  .vcard__tel {
-    margin-bottom: 28px;
-  }
-
-  .vcard__email-btn {
+  @media #{$tablet} {
     position: relative;
     top: 0;
     left: 0;
     font-size: 16px;
-    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

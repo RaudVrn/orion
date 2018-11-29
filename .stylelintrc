@@ -7,6 +7,6 @@
   },
 
   "ignoreFiles": [
-    "source/sass/normalize.scss"
+    "app/sass/normalize.scss"
 ]
 }

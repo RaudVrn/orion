@@ -3,17 +3,15 @@
 @import "variables.scss";
 @import "scaffolding.scss";
 @import "mixins.scss";
-@import "blocks/header.scss";
-@import "blocks/footer.scss";
-@import "blocks/map.scss";
-@import "blocks/partner.scss";
-@import "blocks/portfolio.scss";
 @import "blocks/section-name.scss";
-@import "blocks/services.scss";
+@import "blocks/header.scss";
 @import "blocks/slider.scss";
-@import "blocks/team.scss";
-@import "blocks/testimonials.scss";
+@import "blocks/services.scss";
 @import "blocks/timeline.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/team.scss";
+@import "blocks/map.scss";
 @import "blocks/vcard.scss";
-
-
+@import "blocks/partner.scss";
+@import "blocks/footer.scss";
