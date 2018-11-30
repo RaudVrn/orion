@@ -192,16 +192,18 @@
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 2px 1px #656565;
+  border-bottom: 4px solid transparent;
+
+
+  &:hover {
+    padding-bottom: 2px;
+    text-shadow: none;
+    border-bottom: 3px solid $white;
+  }
 
   @media #{$header-hidden} {
     padding: 0;
   }
-}
-
-.header__menu-link:hover {
-  padding-bottom: 2px;
-  text-shadow: none;
-  border-bottom: 3px solid $white;
 }
 
 .header__singin {
