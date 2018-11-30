@@ -67,6 +67,7 @@
 
 .header__menu {
   display: flex;
+  align-items: baseline;
 
   &--opened {
     @media #{$header-hidden} {
@@ -97,6 +98,10 @@
         left: 0;
         display: block;
         margin: 0;
+      }
+
+      .header__menu-link {
+        text-align: center;
       }
 
       .header__singin {
@@ -168,7 +173,6 @@
 .header__menu-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   @media #{$header-hidden} {
     display: none;
