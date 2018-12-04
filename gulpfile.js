@@ -17,8 +17,13 @@ var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+// var pump = require('pump');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
-gulp.task("serve", ["style","html"], function () {
+
+
+gulp.task("serve", ["style","html", "js"], function () {
   server.init({
     server: "build/",
     notify: false,
@@ -29,6 +34,7 @@ gulp.task("serve", ["style","html"], function () {
 
   gulp.watch("app/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("app/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("app/js/*.js", ["js"]).on("change", server.reload);
 });
 
 gulp.task("clean", function () {
@@ -38,7 +44,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "app/fonts/**/*.{woff,woff2}",
-    "app/img/**",
+    "app/img/**/*",
     "app/js/**"
   ], {
       base: "app"
@@ -50,7 +56,9 @@ gulp.task("style", function () {
   gulp.src("app/sass/style.scss")
     .pipe(plumber())
     .pipe(wait(300))
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require("node-normalize-scss").includePaths
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -59,6 +67,13 @@ gulp.task("style", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("js", function () {
+  gulp.src("app/js/*.js")
+  .pipe(concat("script.min.js"))
+  .pipe(uglify())
+  .pipe(gulp.dest("build/js"))
 });
 
 // gulp.task("sprite", function () {

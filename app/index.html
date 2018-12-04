@@ -17,10 +17,7 @@
     <h1 class="header__headline visually-hidden">Orion theme</h1>
     <nav class="header__topbar">
       <div class="header__left">
-        <a class="header__logo-link" href="#">
-          <!--<svg class="header__logo-img header__logo-img&#45;&#45;min" xmlns="http://www.w3.org/2000/svg">-->
-          <!--<use xlink:href="img/sprite.svg#logo-o"></use>-->
-          <!--</svg>-->
+        <a class="header__logo-link" href="#slider">
           <picture>
             <source type="image/webp" media="(max-width: 875px)" srcset="img/logo-o.webp 1x, img/logo-o@2x.webp 2x">
             <source media="(max-width: 875px)" srcset="img/logo-o.png 1x, img/logo-o@2x.png 2x">
@@ -30,39 +27,64 @@
         </a>
       </div>
       <div class="header__right">
-        <div class="header__menu <!--header__menu--opened-->">
+        <div class="header__menu">
           <button class="header__menu-burger" type="button">
             <span class="header__menu-burger-bar header__menu-burger-bar--top"></span>
             <span class="header__menu-burger-bar header__menu-burger-bar--middle"></span>
             <span class="header__menu-burger-bar header__menu-burger-bar--bottom"></span>
           </button>
           <ul class="header__menu-list">
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Servises</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">How</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Our&nbsp;work</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Testimonials</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Team</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="#">Contact&nbsp;us</a></li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#services">
+                Services
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#how">
+                How
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#our-work">
+                Our&nbsp;work
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#testimonials">
+                Testimonials
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#team">
+                Team
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#contacts">
+                Contact&nbsp;us
+              </a>
+            </li>
           </ul>
           <div class="header__singin">
-            <button class="header__singin-btn" type="button">Sing&nbsp;in</button>
+            <button class="header__singin-btn" type="button">Sing in</button>
           </div>
         </div>
       </div>
     </nav>
   </header>
   <main class="main">
-    <section class="slider">
+    <section class="slider" id="slider">
       <svg width="62" height="60" xmlns="http://www.w3.org/2000/svg" class="slider__img">
         <use xlink:href="img/sprite.svg#rocket"></use>
       </svg>
       <div class="slider__caption padded">
-        <h2 class="slider__caption-headline">Let's explore the sky!</h2>
-        <p class="slider__caption-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        <h2 class="slider__caption-headline">Let&rsquo;s explore the sky!</h2>
+        <p class="slider__caption-text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+          aliquet.</p>
       </div>
       <ul class="slider__banner-btns">
         <li class="slider__banner-btn slider__banner-btn--l">
-          <a class="slider__banner-btn-link" href="#">Learn&nbsp;more</a>
+          <a class="slider__banner-btn-link" href="#">Learn more</a>
         </li>
         <li class="slider__banner-nobtn">
           <span>or</span>
@@ -78,68 +100,73 @@
         <a class="slider__banner-nav-dot" href="#"></a>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="services__headline visually-hidden">Services</h2>
       <ul class="services__list padded">
         <li class="services__item">
           <a class="services__link" href="#">
-          <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
-            <use xlink:href="img/sprite.svg#browser"></use>
-          </svg>
-        </a>
-          <p class="services__name">Web&nbsp;Design</p>
-          <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+            <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
+              <use xlink:href="img/sprite.svg#browser"></use>
+            </svg>
+          </a>
+          <p class="services__name">Web Design</p>
+          <p class="services__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+            aliquet. mauris.</p>
         </li>
         <li class="services__item">
           <a class="services__link" href="#">
-          <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
-            <use xlink:href="img/sprite.svg#anchor"></use>
-          </svg>
-        </a>
-          <p class="services__name">Logo&nbsp;Design</p>
-          <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+            <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
+              <use xlink:href="img/sprite.svg#anchor"></use>
+            </svg>
+          </a>
+          <p class="services__name">Logo Design</p>
+          <p class="services__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+            aliquet. mauris.</p>
 
         </li>
         <li class="services__item">
           <a class="services__link" href="#">
-          <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
-            <use xlink:href="img/sprite.svg#print"></use>
-          </svg>
-        </a>
-          <p class="services__name">Print&nbsp;Design</p>
-          <p class="services__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris.</p>
+            <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" class="services__link-icon">
+              <use xlink:href="img/sprite.svg#print"></use>
+            </svg>
+          </a>
+          <p class="services__name">Print Design</p>
+          <p class="services__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+            aliquet. mauris.</p>
 
         </li>
       </ul>
     </section>
-    <section class="timeline padded">
+    <section class="timeline padded" id="how">
       <div class="timeline__section-name section-name">
-        <h2 class="section-name__headline">How we work</h2>
-        <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        <h2 class="section-name__headline">How we&nbsp;work</h2>
+        <p class="section-name__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+          aliquet.</p>
       </div>
       <div class="timeline__content">
         <div class="timeline__line">
           <div class="timeline__circle"></div>
           <ul class="timeline__list">
             <li class="timeline__step">
-              <p class="timeline__step-headline">Client contact us</p>
-              <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
+              <p class="timeline__step-headline">Client contact&nbsp;us</p>
+              <p class="timeline__step-decs">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum.</p>
             </li>
             <li class="timeline__step timeline__step--left">
-              <p class="timeline__step-headline">We will discuss what do you want</p>
-              <p class="timeline__step-decs">This is Photoshop's version of Lorem Ipsum.</p>
+              <p class="timeline__step-headline">We&nbsp;will discuss what do&nbsp;you want</p>
+              <p class="timeline__step-decs">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum.</p>
             </li>
           </ul>
           <div class="timeline__circle"></div>
 
         </div>
       </div>
-      <a class="timeline__link" href="#">See all how we work</a>
+      <a class="timeline__link" href="#">See all how we&nbsp;work</a>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="our-work">
       <div class="portfolio__section-name section-name">
         <h2 class="section-name__headline">Our work</h2>
-        <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        <p class="section-name__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+          aliquet.</p>
       </div>
       <div class="portfolio__wrapper">
         <ul class="portfolio__list">
@@ -147,182 +174,199 @@
             <picture>
               <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
               <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
-          </picture>
+            </picture>
               <a class="portfolio__item-link" href="#">Sylabus</a>
           </li>
           <li class="portfolio__item">
             <picture>
               <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
               <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
-          </picture>
+            </picture>
               <a class="portfolio__item-link" href="#">Contest</a>
           </li>
           <li class="portfolio__item">
             <picture>
               <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
               <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
-          </picture>
+            </picture>
               <a class="portfolio__item-link" href="#">Travel</a>
           </li>
           <li class="portfolio__item">
             <picture>
               <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
               <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
-          </picture>
+            </picture>
               <a class="portfolio__item-link" href="#">Shop</a>
           </li>
         </ul>
         <div class="portfolio__nav-arrow-list">
           <a class="portfolio__nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow portfolio__nav-arrow--empty">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-        </a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow portfolio__nav-arrow--empty">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </a>
           <a class="portfolio__nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow">
-            <use xlink:href="img/sprite.svg#arrow-right"></use>
-          </svg>
-        </a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials__section-name section-name">
         <h2 class="section-name__headline">Testimonials</h2>
-        <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        <p class="section-name__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+          aliquet.</p>
       </div>
       <div class="testimonials__quote">
         <picture>
           <source type="image/webp" srcset="img/American-Hero-Neil-Armstrong---102034.webp 1x, img/American-Hero-Neil-Armstrong---102034@2x.webp 2x">
           <img width="81" height="81" class="testimonials__author-img" src="img/American-Hero-Neil-Armstrong---102034.jpg" srcset="img/American-Hero-Neil-Armstrong---102034@2x.jpg 2x" alt="Neil Armstrong photo">
-      </picture>
-          <div class="testimonials__quote-wrapper">
+        </picture>
+          <blockquote class="testimonials__quote-wrapper">
             <cite class="testimonials__quote-author">
-              <span class="testimonials__author-name">Neil Armstrong&nbsp;/&nbsp;</span>
-              <span class="testimonials__author-prof">1st man walk on the moon</span>
+              <span class="testimonials__author-name">Neil Armstrong&nbsp;/ </span>
+              <span class="testimonials__author-prof">1st man walk on&nbsp;the moon</span>
             </cite>
-            <blockquote class="testimonials__quote-text">Orion is great, you should try it. The component is very easy to understand, the
-              value is great too. And last but not least, orion is my favorite services.</blockquote>
-          </div>
+            <p class="testimonials__quote-text">Orion is&nbsp;great, you should try&nbsp;it. The component is&nbsp;very easy
+              to&nbsp;understand, the value is&nbsp;great too. And last but not least, orion is&nbsp;my&nbsp;favorite services.</p>
+          </blockquote>
       </div>
     </section>
-    <section class="team padded">
+    <section class="team padded" id="team">
       <div class="team__section-name section-name">
         <h2 class="section-name__headline">Meet the team</h2>
-        <p class="section-name__desc">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+        <p class="section-name__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+          aliquet.
+        </p>
       </div>
       <ul class="team__list">
         <li class="team__item">
           <picture>
             <source type="image/webp" srcset="img/AfnizarNurGhifari.webp 1x, img/AfnizarNurGhifari@2x.webp 2x">
             <img width="123" height="124" class="team__item-img" src="img/AfnizarNurGhifari.png" srcset="img/AfnizarNurGhifari@2x.png 2x" alt="Chief Executive Officer photo">
-        </picture>
+          </picture>
             <span class="team__item-name">Afnizar Nur Ghifari</span>
             <span class="team__item-prof">Chief Executive Officer</span>
             <ul class="team__item-social-list">
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
               </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#dribble"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#dribble"></use>
+              </svg>
+              </a>
+              </li>
             </ul>
         </li>
         <li class="team__item">
           <picture>
             <source type="image/webp" srcset="img/HenryPhillips.webp 1x, img/HenryPhillips@2x.webp 2x">
             <img width="123" height="124" class="team__item-img" src="img/HenryPhillips.png" srcset="img/HenryPhillips@2x.png 2x" alt="Black Belt UI/UX Strategist photo">
-        </picture>
+          </picture>
             <span class="team__item-name">Henry Phillips</span>
             <span class="team__item-prof">Black Belt UI/UX Strategist</span>
             <ul class="team__item-social-list">
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
               </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#dribble"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#dribble"></use>
+                </svg></a></li>
             </ul>
         </li>
         <li class="team__item">
           <picture>
             <source type="image/webp" srcset="img/GeraldElliott.webp 1x, img/GeraldElliott@2x.webp 2x">
             <img width="123" height="124" class="team__item-img" src="img/GeraldElliott.png" srcset="img/GeraldElliott@2x.png 2x" alt="Lead User Experience Manager">
-        </picture>
+          </picture>
             <span class="team__item-name">Gerald Elliott</span>
             <span class="team__item-prof">Lead User Experience Manager</span>
             <ul class="team__item-social-list">
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
               </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#dribble"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#dribble"></use>
+                </svg>
+              </a>
+              </li>
             </ul>
         </li>
         <li class="team__item">
           <picture>
             <source type="image/webp" srcset="img/ReadAlexander.webp 1x, img/ReadAlexander@2x.webp 2x">
             <img width="123" height="124" class="team__item-img" src="img/ReadAlexander.png" srcset="img/ReadAlexander@2x.png 2x" alt="Lead User Experience Manager photo">
-        </picture>
+          </picture>
             <span class="team__item-name">Read Alexander</span>
             <span class="team__item-prof">Lead User Experience Manager</span>
             <ul class="team__item-social-list">
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--facebook" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
               </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--twitter" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              </li>
               <li class="team__item-social-item">
                 <a class="team__item-social-link" href="#">
-              <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#dribble"></use>
-              </svg></a></li>
+                <svg width="18" height="18" class="team__social-icon team__social-icon--dribble" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#dribble"></use>
+                </svg>
+             </a>
+              </li>
             </ul>
         </li>
       </ul>
     </section>
-    <section class="map">
+    <section class="map" id="contacts">
       <h2 class="visually-hidden">Contacs</h2>
       <div class="map__no-scroll" onclick="style.pointerEvents='none'"></div>
       <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H"></iframe>
@@ -334,7 +378,7 @@
           <span class="vcard__locality locality visually-hidden">Purwokerto</span>
         </div>
         <div class="vcard__tel tel"><a class="vcard__tel-link" href="tel:+823945940">+82394 5940</a></div>
-        <a class="vcard__email-btn" href="#">Send us an email</a>
+        <a class="vcard__email-btn" href="#">Send&nbsp;us an&nbsp;email</a>
       </div>
     </section>
     <section class="partner">
@@ -380,7 +424,7 @@
     <div class="footer__wrapper padded">
       <nav class="footer__menus">
         <div class="footer__menu-column">
-          <h4 class="footer__menu-headline">Value</h4>
+          <h3 class="footer__menu-headline">Value</h3>
           <ul class="footer__menu">
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">About</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li>
@@ -390,7 +434,7 @@
           </ul>
         </div>
         <div class="footer__menu-column">
-          <h4 class="footer__menu-headline">Affiliate</h4>
+          <h3 class="footer__menu-headline">Affiliate</h3>
           <ul class="footer__menu">
             <li class="footer__menu-item"><a class="footer__menu-link" href="">NASA</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="">JAXA Japan</a></li>
@@ -399,7 +443,7 @@
           </ul>
         </div>
         <div class="footer__menu-column">
-          <h4 class="footer__menu-headline">Social</h4>
+          <h3 class="footer__menu-headline">Social</h3>
           <ul class="footer__menu">
             <li class="footer__menu-item"><a class="footer__menu-link" href="">Facebook</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="">Dribbble</a></li>
@@ -408,13 +452,12 @@
         </div>
       </nav>
       <div class="footer__subscribe">
-        <h4 class="footer__subscribe-headline">Get served</h4>
+        <h3 class="footer__subscribe-headline">Get served</h3>
         <form class="footer__subscribe-form" action="#" method="post">
           <input class="footer__subscribe-input" type="email" placeholder="user@email.com" required>
           <button class="footer__subscribe-button" type="submit">OK</button>
-
         </form>
-        <p class="footer__copyright">Orion Theme &copy; Afnizar Nur Ghifari</p>
+        <p class="footer__copyright">Orion Theme &copy;&nbsp;Afnizar Nur Ghifari</p>
         <div class="footer__good-bye-wrapper">
           <p class="footer__good-bye">Made with love</p>
           <svg width="12" height="12" class="footer__good-bye-icon" xmlns="http://www.w3.org/2000/svg">
@@ -424,9 +467,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/picturefill.js"></script>
-  <script src="js/svgxuse.js"></script>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/picturefill.js"></script> -->
+  <script src="js/script.min.js"></script>
+  <!-- <script src="js/svgxuse.js"></script> -->
 </body>
 
 </html>

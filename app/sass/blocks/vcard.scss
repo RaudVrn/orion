@@ -10,18 +10,14 @@
   }
 }
 
-// .vcard__wrapper {
-//   position: relative;
-// }
-
 .vcard__adr {
-  padding: 32px 23px 0;
+  padding: 32px 23px 15px;
   font-size: 18px;
   text-align: left;
   color: #545454;
 
   @media #{$tablet} {
-    margin-bottom: 28px;
+    padding-bottom: 28px;
   }
 
   @media #{$mobile} {

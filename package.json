@@ -10,6 +10,7 @@
     "browser-sync": "2.23.x",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
@@ -19,8 +20,10 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.1",
     "gulp-wait": "0.0.2",
     "gulp-webp": "^3.0.0",
+    "node-normalize-scss": "^8.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
@@ -52,6 +55,19 @@
   "dependencies": {
     "imagemin": "^5.3.1",
     "imagemin-webp": "^4.1.0",
+    "node-modules": "^1.0.1",
+    "normalize.css": "^8.0.1",
     "npm": "^5.8.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaudVrn/orion.git"
+  },
+  "author": "Zaytsev Sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaudVrn/orion/issues"
+  },
+  "homepage": "https://github.com/RaudVrn/orion#readme"
 }
