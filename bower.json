@@ -1,0 +1,17 @@
+{
+  "name": "wfto",
+  "description": "Russian clone for a web site wfto.com",
+  "main": "bowerfile.js",
+  "authors": [
+    "Zaytsev Sergey"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/RaudVrn/orion",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

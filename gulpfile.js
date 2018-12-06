@@ -70,7 +70,7 @@ gulp.task("style", function () {
 });
 
 gulp.task("js", function () {
-  gulp.src("app/js/*.js")
+  gulp.src(["node_modules/headroom.js/dist/headroom.js", "app/js/*.js"])
   .pipe(concat("script.min.js"))
   .pipe(uglify())
   .pipe(gulp.dest("build/js"))
