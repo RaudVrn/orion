@@ -28,7 +28,8 @@
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "tiny-slider": "^2.8.8"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli -x 'app/js/picturefill.js', 'app/js/svgxuse.js'",

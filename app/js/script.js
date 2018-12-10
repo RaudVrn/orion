@@ -16,20 +16,17 @@ menuBurger.addEventListener('click', function () {
 
 var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 var observerTarget = document.querySelector('header');
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    if(observerTarget.classList.contains('header--unpinned')){
+var observer = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    if (observerTarget.classList.contains('header--unpinned')) {
       headerMenu.classList.remove('header__menu--opened'),
-      menuBurger.classList.remove('header__menu-burger--opened')
+        menuBurger.classList.remove('header__menu-burger--opened')
     }
-  });    
+  });
 });
-var config = { attributes: true, childList: true, characterData: true }
+var config = {
+  attributes: true,
+  childList: true,
+  characterData: true
+}
 observer.observe(observerTarget, config);
-
-
-
-
-
-
-  

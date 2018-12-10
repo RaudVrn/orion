@@ -18,7 +18,7 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 // var pump = require('pump');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
 
 
@@ -33,7 +33,8 @@ gulp.task("serve", ["style","html", "js"], function () {
   });
 
   gulp.watch("app/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("app/*.html", ["html"], "app/js/*.js", ["js"]).on("change", server.reload);
+  gulp.watch("app/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("app/js/*.js", ["js"]).on("change", server.reload);
 });
 
 gulp.task("clean", function () {
