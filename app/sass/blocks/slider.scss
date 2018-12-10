@@ -1,6 +1,9 @@
-// .slider__wrapper {
-//   /*position: relative;*/
-// }
+.slider {
+  position: relative;
+  min-width: 320px;
+  max-width: 100%;
+}
+
 .slider__list {
   display: flex;
 }
@@ -9,28 +12,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../img/orion.jpg") no-repeat;
-  background-size: cover;
   background-position: center;
-  width: 100%;
+  background-size: cover;
 
-  @media #{$retina} {
+  &--first {
+    background: url("../img/orion.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
 
-    background-image: url("../img/orionx2.jpg");
+    @media #{$retina} {
+      background-image: url("../img/orionx2.jpg");
+    }
+
+    @media #{$mobile} {
+      background-image: url("../img/orion320.jpg");
+
+      @media #{$retina} {
+        background-image: url("../img/orion320x2.jpg");
+      }
+    }
+  }
+
+  &--second {
+    background: url("../img/slide2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media #{$retina} {
+      background-image: url("../img/slide2@2x.jpg");
+    }
+  }
+
+  &--third {
+    text-shadow: 0 2px 1px #656565;
+    background: url("../img/slide3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media #{$retina} {
+      background-image: url("../img/slide3@2x.jpg");
+    }
   }
 
   @media (max-width: 680px) {
-
     margin-top: 55px;
   }
+}
 
-  @media #{$mobile} {
-    background-image: url("../img/orion320.jpg");
+.slider__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 241px;
 
-    @media #{$retina} {
-
-      background-image: url("../img/orion320x2.jpg");
-    }
+  @media (max-width: 385px) {
+    margin-bottom: 122px;
   }
 }
 
@@ -57,7 +93,7 @@
   font-weight: 700;
   font-size: 48px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
 
   @media #{$tablet} {
@@ -74,7 +110,7 @@
   margin-bottom: 59px;
   font-family: #{$font-open-sans};
   text-align: center;
-  color: #ffffff;
+  color: $white;
 
   @media #{$tablet} {
     font-size: 14px;
@@ -100,8 +136,18 @@
   text-shadow: 0 2px 1px #656565;
 
   @media (max-width: 385px) {
-    margin-bottom: 35px;
+    margin-bottom: 92px;
   }
+}
+
+.slider__banner-btns-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider__banner-btn {
@@ -153,9 +199,9 @@
 
 .slider__banner-nav {
   position: relative;
+  right: 0;
   bottom: 100px;
   left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,6 +225,6 @@
   background-color: #b7b7b7;
 }
 
-.slider__banner-nav-dot--active {
+.tns-nav-active {
   background-color: #b7b7b7;
 }

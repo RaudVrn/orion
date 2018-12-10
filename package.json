@@ -1,8 +1,8 @@
 {
-  "name": "wfto",
+  "name": "orion",
   "version": "1.0.0",
   "private": true,
-  "description": "Russian clone for a web site wfto.com",
+  "description": "Orion test project",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "ajv": "^6.5.0",
@@ -57,7 +57,6 @@
   "dependencies": {
     "imagemin": "^5.3.1",
     "imagemin-webp": "^4.1.0",
-    "node-modules": "^1.0.1",
     "normalize.css": "^8.0.1",
     "npm": "^5.8.0"
   },

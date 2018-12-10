@@ -25,15 +25,15 @@ body {
   line-height: normal;
   font-family: $font-main;
 
-  // @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  //   overflow-x: hidden;
-  // }
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    overflow-x: hidden;
+  }
 
 
   @media #{$tablet} {
     .main {
       width: auto;
-      margin: auto;
+      // margin: auto;
       font-size: 14px;
     }
   }
