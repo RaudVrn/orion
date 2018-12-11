@@ -12,8 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-position: center;
-  background-size: cover;
 
   &--first {
     background: url("../img/orion.jpg") no-repeat;
@@ -22,6 +20,8 @@
 
     @media #{$retina} {
       background-image: url("../img/orionx2.jpg");
+      background-position: center;
+      background-size: cover;
     }
 
     @media #{$mobile} {
@@ -40,6 +40,8 @@
 
     @media #{$retina} {
       background-image: url("../img/slide2@2x.jpg");
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -51,6 +53,8 @@
 
     @media #{$retina} {
       background-image: url("../img/slide3@2x.jpg");
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -81,10 +85,6 @@
     height: 30px;
     margin-top: 90px;
   }
-}
-
-.slider__caption {
-  max-width: 100%;
 }
 
 .slider__caption-headline {
