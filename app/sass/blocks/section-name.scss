@@ -19,7 +19,7 @@
   font-size: 14px;
   font-family: $font-open-sans;
   text-align: center;
-  color: #a1a1a1;
+  color: $dark-grey-contrast;
 
   @media #{$mobile} {
     padding: 0 15px;

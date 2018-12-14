@@ -14,7 +14,7 @@
   padding: 32px 23px 15px;
   font-size: 18px;
   text-align: left;
-  color: #545454;
+  color: $dark-grey-contrast;
 
   @media #{$tablet} {
     padding-bottom: 28px;
@@ -29,7 +29,7 @@
   padding-left: 23px;
   font-size: 14px;
   text-align: left;
-  color: #acacac;
+  color: $dark-grey-contrast;
   text-decoration: none;
 
   &:hover {

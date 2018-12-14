@@ -112,7 +112,7 @@
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 14px;
-  color: #717171;
+  color: $dark-grey-contrast;
 
   &::before {
     content: "";
@@ -132,7 +132,7 @@
 .timeline__step-decs {
   font-weight: 400;
   font-size: 12px;
-  color: #898989;
+  color: $dark-grey-contrast;
 
   @media #{$tablet} {
     font-size: 12px;

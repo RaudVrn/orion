@@ -49,7 +49,7 @@
 
   &:hover {
     .services__link-icon {
-      opacity: 0.6;
+      fill: #202020;
     }
   }
 }
@@ -78,7 +78,7 @@
   font-size: 14px;
   line-height: 24px;
   font-family: #{$font-open-sans};
-  color: #88929d;
+  color: $dark-grey-contrast;
   margin-bottom: 29px;
 
   @media #{$tablet} {

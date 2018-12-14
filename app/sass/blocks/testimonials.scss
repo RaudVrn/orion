@@ -103,7 +103,7 @@
   line-height: 30px;
   font-family: $font-open-sans;
   text-align: left;
-  color: #959595;
+  color: $dark-grey-contrast;
 
   @media #{$tablet} {
     font-size: 13px;

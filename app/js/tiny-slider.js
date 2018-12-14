@@ -1419,7 +1419,7 @@ var tns = (function (){
       updateSlideStatus();
   
       // == live region ==
-      outerWrapper.insertAdjacentHTML('afterbegin', '<div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">' + getLiveRegionStr() + '</span>  of ' + slideCount + '</div>');
+      outerWrapper.insertAdjacentHTML('afterbegin', '<div class="tns-liveregion tns-visually-hidden" aria-hidden="true" aria-live="polite" aria-atomic="true">slide <span class="current">' + getLiveRegionStr() + '</span>  of ' + slideCount + '</div>');
       liveregionCurrent = outerWrapper.querySelector('.tns-liveregion .current');
   
       // == autoplayInit ==
@@ -3176,3 +3176,5 @@ var tns = (function (){
   
   return tns;
   })();
+
+  // document.querySelector('tns-liveregion').setAttribute('aria-hidden="true"')
