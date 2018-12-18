@@ -8,6 +8,7 @@ var slider = tns({
     mouseDrag: true,
     loop: false,
     center: true,
+    nav: false,
     // navContainer: '.slider__banner-nav',
     autoplayButtonOutput: false,
     // autoplayHoverPause: true

@@ -80,6 +80,7 @@
 }
 
 .footer__subscribe-headline {
+  display: block;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -132,7 +133,7 @@
 
 .footer__subscribe-button {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 47px;
   height: 40px;

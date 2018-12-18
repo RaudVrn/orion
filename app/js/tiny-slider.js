@@ -1114,7 +1114,7 @@ var tns = (function (){
         if (!carousel && animateNormal) { addClass(item, animateNormal); }
         setAttrs(item, {
           'aria-hidden': 'true',
-          'tabindex': '-1'
+          // 'tabindex': '-1'
         });
       });
   
@@ -1455,7 +1455,7 @@ var tns = (function (){
           forEach(navItems, function(item, i) {
             setAttrs(item, {
               'data-nav': i,
-              'tabindex': '-1',
+              // 'tabindex': '-1',
               'aria-label': navStr + (i + 1),
               'aria-controls': slideId,
             });
@@ -1523,7 +1523,7 @@ var tns = (function (){
         if (options.controlsContainer || (options.prevButton && options.nextButton)) {
           setAttrs([prevButton, nextButton], {
             'aria-controls': slideId,
-            'tabindex': '-1',
+            // 'tabindex': '-1',
           });
         }
         
@@ -2361,7 +2361,7 @@ var tns = (function (){
           if (!hasAttr(item, 'aria-hidden')) {
             setAttrs(item, {
               'aria-hidden': 'true',
-              'tabindex': '-1'
+              // 'tabindex': '-1'
             });
             removeClass(item, slideActiveClass);
           }
@@ -2412,7 +2412,7 @@ var tns = (function (){
               navCurrent = navItems[navCurrentIndex];
   
           setAttrs(navPrev, {
-            'tabindex': '-1',
+            // 'tabindex': '-1',
             'aria-label': navStr + (navCurrentIndexCached + 1)
           });
           removeClass(navPrev, navActiveClass);
